@@ -1,5 +1,6 @@
 package com.onedev.dicoding.myintentapp.activity
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -68,6 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     var resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         if (it.resultCode == MoveForResultActivity.RESULT_CODE) {
             val selectedValue = it.data?.getIntExtra(MoveForResultActivity.EXTRA_SELECTED_VALUE, 0)
