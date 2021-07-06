@@ -42,10 +42,6 @@ class DetailMainActivity : AppCompatActivity(), View.OnClickListener {
         binding.tvCompany.text = data?.company
     }
 
-    companion object {
-        const val EXTRA_USER = "extra_user"
-    }
-
     override fun onClick(v: View?) {
         when (v) {
             binding.imgShareUser -> {
@@ -64,5 +60,9 @@ class DetailMainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(Intent.createChooser(intent, "Share"))
             }
         }
+    }
+
+    companion object {
+        const val EXTRA_USER = "extra_user"
     }
 }
