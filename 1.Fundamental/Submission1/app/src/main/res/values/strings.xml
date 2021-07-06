@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Github Users</string>
+    <string name="repository">Repository</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="company_name">Nama Perusahaan</string>
+    <string name="location">Location</string>
     <!--  Other string resources -->
     <string-array name="username">
         <item>JakeWharton</item>
