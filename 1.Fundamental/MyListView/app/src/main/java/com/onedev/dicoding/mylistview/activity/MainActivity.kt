@@ -38,8 +38,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun prepare() {
-        dataName = resources.getStringArray(R.array.data_name)
-        dataDescription = resources.getStringArray(R.array.data_description)
         dataPhoto = resources.obtainTypedArray(R.array.data_photo)
     }
 
