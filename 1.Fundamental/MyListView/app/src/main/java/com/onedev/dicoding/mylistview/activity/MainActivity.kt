@@ -9,9 +9,12 @@ import android.widget.ListView
 import android.widget.Toast
 import com.onedev.dicoding.mylistview.R
 import com.onedev.dicoding.mylistview.adapter.HeroAdapter
+import com.onedev.dicoding.mylistview.databinding.ActivityMainBinding
 import com.onedev.dicoding.mylistview.model.Hero
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
 
     private lateinit var adapter: HeroAdapter
     private lateinit var dataName: Array<String>
@@ -21,18 +24,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val listView: ListView = findViewById(R.id.lv_list)
         adapter = HeroAdapter(this)
-        listView.adapter = adapter
+        binding.lvList.adapter = adapter
+        binding.lvList.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            Toast.makeText(this@MainActivity, heroes[position].name, Toast.LENGTH_SHORT).show()
+        }
 
         prepare()
         addItem()
-
-        listView.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
-            Toast.makeText(this@MainActivity, heroes[position].name, Toast.LENGTH_SHORT).show()
-        }
     }
 
     private fun prepare() {
