@@ -22,6 +22,7 @@ class UserAdapter(
 
     inner class ViewHolderRecyclerview(view: View) : RecyclerView.ViewHolder(view) {
         private val imgAvatar = view.findViewById(R.id.img_avatar) as ImageView
+        private val tvName = view.findViewById(R.id.tv_name) as TextView
         private val tvUsername = view.findViewById(R.id.tv_username) as TextView
 
         fun bind(position: Int) {
@@ -31,6 +32,7 @@ class UserAdapter(
                 .circleCrop()
                 .placeholder(R.drawable.ic_baseline_person)
                 .into(imgAvatar)
+            tvName.text = items.name
             tvUsername.text = items.username
             itemView.setOnClickListener {
                 val intent = Intent(context, DetailMainActivity::class.java)

@@ -8,6 +8,7 @@
     android:clickable="true"
     android:focusable="true"
     android:foreground="?selectableItemBackground"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="8dp"
     tools:ignore="UnusedAttribute">
@@ -16,16 +17,24 @@
         android:id="@+id/img_avatar"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
         tools:src="@drawable/ic_baseline_person" />
 
     <TextView
-        android:id="@+id/tv_username"
-        android:layout_width="match_parent"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ellipsize="end"
-        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
         android:maxLines="1"
         android:textSize="15sp"
         tools:text="Username" />
