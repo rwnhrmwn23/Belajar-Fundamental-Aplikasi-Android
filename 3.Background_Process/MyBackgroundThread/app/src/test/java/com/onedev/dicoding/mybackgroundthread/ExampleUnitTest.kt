@@ -1,4 +1,4 @@
-package com.onedev.dicoding.myunittesting
+package com.onedev.dicoding.mybackgroundthread
 
 import org.junit.Test
 
