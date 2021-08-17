@@ -1,14 +1,14 @@
 package com.onedev.dicoding.submission_one.adapter
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.onedev.dicoding.submission_one.R
-import com.onedev.dicoding.submission_one.activity.DetailMainActivity
 import com.onedev.dicoding.submission_one.databinding.ListUserBinding
 import com.onedev.dicoding.submission_one.model.Users
+import com.onedev.dicoding.submission_one.ui.HomeFragmentDirections
 
 class UserAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -30,9 +30,9 @@ class UserAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                 tvName.text = items.name
                 tvUsername.text = items.username
                 itemView.setOnClickListener {
-                    val intent = Intent(itemView.context, DetailMainActivity::class.java)
-                    intent.putExtra(DetailMainActivity.EXTRA_USER, items)
-                    itemView.context.startActivity(intent)
+                    val toDetailUsers = HomeFragmentDirections.actionHomeFragmentToDetailHomeFragment()
+                    toDetailUsers.dataUsers = items
+                    it.findNavController().navigate(toDetailUsers)
                 }
             }
         }

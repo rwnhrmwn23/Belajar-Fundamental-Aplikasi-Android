@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".activity.DetailMainActivity">
+    tools:context=".ui.DetailHomeFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/colorSecondary"
         app:navigationIcon="@drawable/ic_baseline_arrow_back"
         app:theme="@style/ToolbarColoredBackArrow">
 
@@ -28,7 +29,7 @@
                 android:layout_toStartOf="@id/img_share_user"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 tools:text="Username" />
@@ -40,8 +41,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="8dp"
                 android:contentDescription="@string/share_button"
-                android:src="@drawable/ic_baseline_share"
-                app:tint="@color/black" />
+                android:src="@drawable/ic_baseline_share" />
 
         </RelativeLayout>
 
@@ -50,6 +50,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -154,7 +156,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:textColor="@color/black"
         android:textSize="15sp"
