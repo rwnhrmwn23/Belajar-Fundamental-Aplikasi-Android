@@ -11,7 +11,7 @@ import javax.inject.Singleton
 class RetroModule {
     companion object {
         private const val BASE_URL = "https://api.github.com/"
-        private const val ACCESS_TOKEN = "token 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"
+        private const val ACCESS_TOKEN = "token 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"
 
         private val okHttpClient = OkHttpClient.Builder()
             .addInterceptor { chain ->

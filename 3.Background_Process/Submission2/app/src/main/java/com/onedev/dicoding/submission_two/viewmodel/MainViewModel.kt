@@ -14,13 +14,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val showProgress: LiveData<Boolean>
     val usersData: LiveData<List<ItemSearchUser>>
     val userDetail: LiveData<ItemDetailUser>
-    val followerAndFollowing: LiveData<FollowersAndFollowing>
+    val followerData: LiveData<FollowersAndFollowing>
+    val followingData: LiveData<FollowersAndFollowing>
 
     init {
         this.showProgress = repository.showProgress
         this.usersData = repository.usersData
         this.userDetail = repository.usersDetail
-        this.followerAndFollowing = repository.followerAndFollowing
+        this.followerData = repository.followerData
+        this.followingData = repository.followingData
     }
 
     fun searchUserByUsername(username: String) {

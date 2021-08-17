@@ -103,12 +103,14 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
         when (v) {
             binding.llFollowers -> {
                 val toFollowersFollowing = DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
+                toFollowersFollowing.pageIndex = 0
                 toFollowersFollowing.username = binding.tvToolbarTitle.text.toString()
                 preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username!!)
                 v.findNavController().navigate(toFollowersFollowing)
             }
             binding.llFollowing -> {
                 val toFollowersFollowing = DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
+                toFollowersFollowing.pageIndex = 1
                 toFollowersFollowing.username = binding.tvToolbarTitle.text.toString()
                 preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username!!)
                 v.findNavController().navigate(toFollowersFollowing)

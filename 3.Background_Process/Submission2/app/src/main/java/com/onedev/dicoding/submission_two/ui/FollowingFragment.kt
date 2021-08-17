@@ -38,8 +38,18 @@ class FollowingFragment : Fragment() {
 
         viewModel.getFollowing(preferenceManager.getString(Constant.USERNAME))
 
-        viewModel.followerAndFollowing.observe(viewLifecycleOwner, {
-            if (it.isNotEmpty()) {
+        viewModel.showProgress.observe(viewLifecycleOwner, {
+            if (it) {
+                binding.shimmerViewContainer.startShimmerAnimation()
+                binding.shimmerViewContainer.visibility = View.VISIBLE
+            } else {
+                binding.shimmerViewContainer.stopShimmerAnimation()
+                binding.shimmerViewContainer.visibility = View.GONE
+            }
+        })
+
+        viewModel.followingData.observe(viewLifecycleOwner, {
+            if (it.size > 0) {
                 adapter.setListUser(it)
                 binding.rvFollowing.layoutManager = LinearLayoutManager(requireContext())
                 binding.rvFollowing.setHasFixedSize(true)
@@ -52,6 +62,16 @@ class FollowingFragment : Fragment() {
                 binding.llNoDataAvailable.visibility = View.VISIBLE
             }
         })
+    }
+
+    override fun onResume() {
+        super.onResume()
+        binding.shimmerViewContainer.startShimmerAnimation()
+    }
+
+    override fun onPause() {
+        binding.shimmerViewContainer.stopShimmerAnimation()
+        super.onPause()
     }
 
     override fun onDestroyView() {
