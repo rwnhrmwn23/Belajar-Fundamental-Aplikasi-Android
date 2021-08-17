@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/IRWAN/Dicoding/BFAA/1.Fundamental/Submission1/app/src/main/res/drawable/ic_baseline_share.xml" value="0.3728205128205128" />
+        <entry key="..\:/IRWAN/Dicoding/BFAA/1.Fundamental/Submission1/app/src/main/res/layout-v23/list_user_linear.xml" value="0.3625" />
         <entry key="..\:/IRWAN/Dicoding/BFAA/1.Fundamental/Submission1/app/src/main/res/layout/activity_detail_main.xml" value="0.3569230769230769" />
+        <entry key="..\:/IRWAN/Dicoding/BFAA/1.Fundamental/Submission1/app/src/main/res/layout/activity_main.xml" value="0.3569230769230769" />
+        <entry key="..\:/IRWAN/Dicoding/BFAA/1.Fundamental/Submission1/app/src/main/res/layout/activity_splash.xml" value="0.3569230769230769" />
+        <entry key="..\:/IRWAN/Dicoding/BFAA/1.Fundamental/Submission1/app/src/main/res/layout/list_user.xml" value="0.3569230769230769" />
+        <entry key="..\:/IRWAN/Dicoding/BFAA/1.Fundamental/Submission1/app/src/main/res/layout/list_user_linear.xml" value="0.3569230769230769" />
+        <entry key="..\:/IRWAN/Dicoding/BFAA/1.Fundamental/Submission1/app/src/main/res/layout/list_user_placeholder.xml" value="0.3625" />
       </map>
     </option>
   </component>
