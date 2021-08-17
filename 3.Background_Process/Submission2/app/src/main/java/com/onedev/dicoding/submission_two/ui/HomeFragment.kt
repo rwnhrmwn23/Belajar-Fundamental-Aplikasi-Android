@@ -1,0 +1,123 @@
+package com.onedev.dicoding.submission_two.ui
+
+import android.app.SearchManager
+import android.content.Context
+import android.os.Bundle
+import android.view.*
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SearchView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.onedev.dicoding.submission_two.R
+import com.onedev.dicoding.submission_two.adapter.UserAdapter
+import com.onedev.dicoding.submission_two.databinding.FragmentHomeBinding
+import com.onedev.dicoding.submission_two.model.ItemSearchUser
+import com.onedev.dicoding.submission_two.util.Support
+import com.onedev.dicoding.submission_two.viewmodel.MainViewModel
+
+class HomeFragment : Fragment() {
+
+    private lateinit var viewModel: MainViewModel
+    private lateinit var adapter: UserAdapter
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        Support.showActionBar(requireActivity())
+
+        adapter = UserAdapter()
+
+        setHasOptionsMenu(true)
+        binding.rvUser.setHasFixedSize(true)
+        binding.rvUser.layoutManager = LinearLayoutManager(requireContext())
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, menuInflater: MenuInflater) {
+        menuInflater.inflate(R.menu.main_menu, menu)
+
+        val searchManager = activity?.getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        val searchView = menu.findItem(R.id.menu_search).actionView as SearchView
+
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(activity?.componentName))
+        searchView.queryHint = resources.getString(R.string.search_hint)
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                searchUserByUsername(query)
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String): Boolean {
+                return true
+            }
+        })
+    }
+
+    private fun searchUserByUsername(username: String) {
+        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+
+        viewModel.searchUserByUsername(username)
+
+        viewModel.showProgress.observe(viewLifecycleOwner, { showProgress ->
+
+            viewModel.usersData.observe(viewLifecycleOwner, { data ->
+                if (showProgress == true && data == null) {
+                    showLoadingProgress()
+                } else if (showProgress == false && data == null) {
+                    showDataNotFound()
+                } else if (showProgress == false && data != null) {
+                    showDataFound(data)
+                }
+            })
+
+        })
+    }
+
+    private fun showDataFound(data: List<ItemSearchUser>) {
+        adapter.setListUser(data)
+        binding.rvUser.adapter = adapter
+        binding.rvUser.visibility = View.VISIBLE
+        binding.llNoDataAvailable.visibility = View.GONE
+        binding.shimmerViewContainer.visibility = View.GONE
+        binding.shimmerViewContainer.stopShimmerAnimation()
+    }
+
+    private fun showDataNotFound() {
+        binding.rvUser.visibility = View.GONE
+        binding.shimmerViewContainer.visibility = View.GONE
+        binding.shimmerViewContainer.stopShimmerAnimation()
+        binding.llNoDataAvailable.visibility = View.VISIBLE
+    }
+
+    private fun showLoadingProgress() {
+        binding.rvUser.visibility = View.GONE
+        binding.llNotSearching.visibility = View.GONE
+        binding.llNoDataAvailable.visibility = View.GONE
+        binding.shimmerViewContainer.visibility = View.VISIBLE
+        binding.shimmerViewContainer.startShimmerAnimation()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        binding.shimmerViewContainer.startShimmerAnimation()
+    }
+
+    override fun onPause() {
+        binding.shimmerViewContainer.stopShimmerAnimation()
+        super.onPause()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+}
