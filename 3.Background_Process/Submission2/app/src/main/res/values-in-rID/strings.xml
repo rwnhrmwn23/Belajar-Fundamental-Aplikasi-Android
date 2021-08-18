@@ -21,7 +21,6 @@
     <string name="language_icon">Icon Bahasa</string>
     <string name="language">Bahasa</string>
     <string name="change_language">Ubah Bahasa</string>
-    <string name="us_flag">Bendera US</string>
     <string name="save">Simpan</string>
     <string name="info_github_user">Info User Github</string>
 </resources>
