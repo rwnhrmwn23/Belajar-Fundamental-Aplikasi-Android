@@ -10,9 +10,7 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.onedev.dicoding.submission_two.R
 import com.onedev.dicoding.submission_two.databinding.FragmentSplashBinding
-import androidx.appcompat.app.AppCompatActivity
 import com.onedev.dicoding.submission_two.util.Support
-
 
 class SplashFragment : Fragment() {
     private var _binding: FragmentSplashBinding? = null

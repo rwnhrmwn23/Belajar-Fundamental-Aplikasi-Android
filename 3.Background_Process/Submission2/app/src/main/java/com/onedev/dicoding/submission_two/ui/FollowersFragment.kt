@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.dicoding.submission_two.adapter.FollowersAdapter
 import com.onedev.dicoding.submission_two.databinding.FragmentFollowersBinding

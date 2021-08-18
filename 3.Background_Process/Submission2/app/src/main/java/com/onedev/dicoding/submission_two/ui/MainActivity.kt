@@ -3,6 +3,8 @@ package com.onedev.dicoding.submission_two.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.onedev.dicoding.submission_two.databinding.ActivityMainBinding
+import com.onedev.dicoding.submission_two.util.LocaleHelper.getPersistedLanguage
+import com.onedev.dicoding.submission_two.util.LocaleHelper.setLocale
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,5 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val language = getPersistedLanguage(this@MainActivity, "in")
+        setLocale(this@MainActivity, language)
     }
 }

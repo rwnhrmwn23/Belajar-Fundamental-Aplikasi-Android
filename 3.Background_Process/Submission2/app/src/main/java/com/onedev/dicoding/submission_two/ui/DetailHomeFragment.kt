@@ -3,7 +3,6 @@ package com.onedev.dicoding.submission_two.ui
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -48,14 +47,14 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
         binding.toolbar.setOnMenuItemClickListener {
             if (it.itemId == R.id.menu_share) {
-                val textToShare = "Info Github User" +
-                        "\nUsername : ${binding.tvToolbarTitle.text}" +
-                        "\nName : ${binding.tvName.text}" +
-                        "\nRepository : ${binding.tvRepository.text.toString().replace("Repository", "")}" +
-                        "\nFollowers : ${Support.convertToDec(binding.tvFollowers.text.toString().toDouble())}" +
-                        "\nFollowing : ${Support.convertToDec(binding.tvFollowing.text.toString().toDouble())}" +
-                        "\nLocation : ${binding.tvLocation.text}" +
-                        "\nCompany : ${binding.tvCompany.text}"
+                val textToShare = getString(R.string.info_github_user) +
+                        "\n${getString(R.string.username)} : ${binding.tvToolbarTitle.text}" +
+                        "\n${getString(R.string.name)} : ${binding.tvName.text}" +
+                        "\n${Support.replaceSymbol(getString(R.string.repository))} : ${Support.replaceRepo(binding.tvRepository.text.toString())}" +
+                        "\n${getString(R.string.followers)} : ${Support.convertToDec(binding.tvFollowers.text.toString().toDouble())}" +
+                        "\n${getString(R.string.following)} : ${Support.convertToDec(binding.tvFollowing.text.toString().toDouble())}" +
+                        "\n${getString(R.string.location)} : ${binding.tvLocation.text}" +
+                        "\n${getString(R.string.company_name)} : ${binding.tvCompany.text}"
                 val intent = Intent()
                 intent.action = Intent.ACTION_SEND
                 intent.type = "text/plain"
@@ -69,7 +68,7 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
         binding.llFollowers.setOnClickListener(this)
         binding.llFollowing.setOnClickListener(this)
- 
+
         bindUI()
     }
 

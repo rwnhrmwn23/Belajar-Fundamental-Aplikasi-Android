@@ -4,9 +4,11 @@ import android.app.SearchManager
 import android.content.Context
 import android.os.Bundle
 import android.view.*
+import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.dicoding.submission_two.R
 import com.onedev.dicoding.submission_two.adapter.UserAdapter
@@ -91,6 +93,15 @@ class HomeFragment : Fragment() {
                 return true
             }
         })
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return if (item.itemId == R.id.menu_setting) {
+            requireView().findNavController().navigate(R.id.action_homeFragment_to_settingFragment)
+            true
+        } else {
+            false
+        }
     }
 
     private fun searchUserByUsername(username: String) {

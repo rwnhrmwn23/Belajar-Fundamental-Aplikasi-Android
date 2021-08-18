@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
-import com.onedev.dicoding.submission_two.R
 import com.onedev.dicoding.submission_two.adapter.TabFollowerAndFollowingAdapter
 import com.onedev.dicoding.submission_two.databinding.FragmentFollowersFollowingBinding
 import com.onedev.dicoding.submission_two.util.Support

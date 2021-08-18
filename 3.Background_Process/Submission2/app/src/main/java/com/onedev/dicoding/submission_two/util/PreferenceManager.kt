@@ -7,16 +7,6 @@ class PreferenceManager(context: Context) {
 
     private val sharedPreferences: SharedPreferences = context.getSharedPreferences(Constant.KEY_PREFERENCE_NAME, Context.MODE_PRIVATE)
 
-    fun putBoolean(key: String, value: Boolean) {
-        val editor: SharedPreferences.Editor = sharedPreferences.edit()
-        editor.putBoolean(key, value)
-        editor.apply()
-    }
-
-    fun getBoolean(key: String): Boolean {
-        return sharedPreferences.getBoolean(key, false)
-    }
-
     fun putString(key: String, value: String) {
         val editor: SharedPreferences.Editor = sharedPreferences.edit()
         editor.putString(key, value)
@@ -25,11 +15,5 @@ class PreferenceManager(context: Context) {
 
     fun getString(key: String): String {
         return sharedPreferences.getString(key, null)!!
-    }
-
-    fun clearPreferences() {
-        val editor: SharedPreferences.Editor = sharedPreferences.edit()
-        editor.clear()
-        editor.apply()
     }
 }

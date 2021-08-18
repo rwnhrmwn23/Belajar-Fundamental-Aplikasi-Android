@@ -5,6 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import java.text.DecimalFormat
 
 object Support {
+    fun replaceRepo(text: String): String {
+        return text
+            .replace("Repository", "")
+            .replace("Gudang", "")
+            .trim()
+    }
+
+    fun replaceSymbol(text: String): String {
+        return text
+            .substring(5)
+            .trim()
+    }
+
     fun convertToDec(value: Double): String {
         val dec = DecimalFormat("#,###")
         return dec.format(value)

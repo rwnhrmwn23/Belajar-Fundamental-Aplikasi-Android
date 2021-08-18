@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Github Users</string>
+    <string name="username">Username</string>
+    <string name="name">Name</string>
     <string name="repository">%1$s Repository</string>
     <string name="followers">Followers</string>
     <string name="following">Following</string>
@@ -14,6 +15,15 @@
     <string name="username_not_found">Username Not Found</string>
     <string name="followers_not_found">Followers Not Found</string>
     <string name="following_not_found">Following Not Found</string>
+    <string name="setting">Setting</string>
+    <string name="language_icon">Language Icon</string>
+    <string name="language">Language</string>
+    <string name="english" translatable="false">English (United States)</string>
+    <string name="indonesia" translatable="false">Indonesia</string>
+    <string name="change_language">Change Language</string>
+    <string name="us_flag">US Flags</string>
+    <string name="save">Save</string>
+    <string name="info_github_user">User Github Info</string>
     <!--  Other string resources -->
     <string-array name="username">
         <item>JakeWharton</item>
@@ -111,4 +121,5 @@
         <item>@drawable/user9</item>
         <item>@drawable/user10</item>
     </string-array>
+    <string name="app_name">Github Users</string>
 </resources>
