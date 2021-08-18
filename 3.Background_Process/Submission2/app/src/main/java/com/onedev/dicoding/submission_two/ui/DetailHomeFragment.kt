@@ -51,7 +51,7 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 val textToShare = "Info Github User" +
                         "\nUsername : ${binding.tvToolbarTitle.text}" +
                         "\nName : ${binding.tvName.text}" +
-                        "\nRepository : ${Support.convertToDec(binding.tvRepository.text.toString().toDouble())}" +
+                        "\nRepository : ${binding.tvRepository.text.toString().replace("Repository", "")}" +
                         "\nFollowers : ${Support.convertToDec(binding.tvFollowers.text.toString().toDouble())}" +
                         "\nFollowing : ${Support.convertToDec(binding.tvFollowing.text.toString().toDouble())}" +
                         "\nLocation : ${binding.tvLocation.text}" +
@@ -69,12 +69,20 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
         binding.llFollowers.setOnClickListener(this)
         binding.llFollowing.setOnClickListener(this)
-
+ 
         bindUI()
     }
 
     private fun bindUI() {
         viewModel.getUserDetail(args.username!!)
+
+        viewModel.showProgress.observe(viewLifecycleOwner, {
+            if (it) {
+                binding.shimmerViewContainer.startShimmerAnimation()
+            } else {
+                binding.shimmerViewContainer.stopShimmerAnimation()
+            }
+        })
 
         viewModel.userDetail.observe(viewLifecycleOwner, {
             lifecycleScope.launch(Dispatchers.Main) {
@@ -85,11 +93,14 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                     .into(binding.imgAvatar)
                 binding.tvToolbarTitle.text = it.login
                 binding.tvName.text = it.name
-                binding.tvRepository.text = Support.convertToDec(it.public_repos.toDouble())
+                binding.tvRepository.text = getString(R.string.repository, Support.convertToDec(it.public_repos.toDouble()))
                 binding.tvFollowers.text = Support.convertToDec(it.followers.toDouble())
                 binding.tvFollowing.text = Support.convertToDec(it.following.toDouble())
                 binding.tvLocation.text = it.location
                 binding.tvCompany.text = it.company
+
+                binding.llLayout.visibility = View.VISIBLE
+                binding.shimmerViewContainer.visibility = View.GONE
             }
         })
     }
@@ -102,19 +113,31 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v) {
             binding.llFollowers -> {
-                val toFollowersFollowing = DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
+                val toFollowersFollowing =
+                    DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
                 toFollowersFollowing.pageIndex = 0
                 toFollowersFollowing.username = binding.tvToolbarTitle.text.toString()
                 preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username!!)
                 v.findNavController().navigate(toFollowersFollowing)
             }
             binding.llFollowing -> {
-                val toFollowersFollowing = DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
+                val toFollowersFollowing =
+                    DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
                 toFollowersFollowing.pageIndex = 1
                 toFollowersFollowing.username = binding.tvToolbarTitle.text.toString()
                 preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username!!)
                 v.findNavController().navigate(toFollowersFollowing)
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        binding.shimmerViewContainer.startShimmerAnimation()
+    }
+
+    override fun onPause() {
+        binding.shimmerViewContainer.stopShimmerAnimation()
+        super.onPause()
     }
 }

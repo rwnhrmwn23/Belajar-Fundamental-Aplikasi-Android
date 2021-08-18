@@ -1,6 +1,5 @@
 package com.onedev.dicoding.submission_two.adapter
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController

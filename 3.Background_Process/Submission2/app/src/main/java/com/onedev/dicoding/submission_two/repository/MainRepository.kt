@@ -52,6 +52,7 @@ class MainRepository(application: Application) {
     }
 
     fun getUserDetail(username: String) {
+        showProgress.value = true
         mService.getDetailUser(username)
             .enqueue(object : Callback<ItemDetailUser> {
                 override fun onResponse(call: Call<ItemDetailUser>, response: Response<ItemDetailUser>) {
@@ -60,10 +61,12 @@ class MainRepository(application: Application) {
                     else
                         usersData.value = null
 
+                    showProgress.value = false
                     Log.d(TAG, "onResponse getUserDetail: ${Gson().toJson(response.body())}")
                 }
 
                 override fun onFailure(call: Call<ItemDetailUser>, t: Throwable) {
+                    showProgress.value = false
                     Log.d(TAG, "onFailure getUserDetail: ${t.localizedMessage}")
                 }
             })

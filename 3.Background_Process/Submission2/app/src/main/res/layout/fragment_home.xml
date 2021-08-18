@@ -24,7 +24,7 @@
             app:tint="@color/colorPrimaryDark" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:gravity="center_horizontal"
@@ -42,7 +42,7 @@
         android:visibility="gone"
         app:duration="800">
 
-        <include layout="@layout/list_user_placeholder" />
+        <include layout="@layout/layout_user_placeholder" />
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 

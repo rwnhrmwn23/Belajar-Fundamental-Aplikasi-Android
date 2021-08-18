@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <include layout="@layout/list_user_placeholder" />
+        <include layout="@layout/layout_user_placeholder" />
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:gravity="center_horizontal"
-            android:text="@string/followers_not_found"
+            android:text="@string/following_not_found"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="15sp" />
 

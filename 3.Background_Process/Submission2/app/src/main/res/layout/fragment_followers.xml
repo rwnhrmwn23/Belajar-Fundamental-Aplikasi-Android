@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <include layout="@layout/list_user_placeholder" />
+        <include layout="@layout/layout_user_placeholder" />
 
     </com.facebook.shimmer.ShimmerFrameLayout>
 
