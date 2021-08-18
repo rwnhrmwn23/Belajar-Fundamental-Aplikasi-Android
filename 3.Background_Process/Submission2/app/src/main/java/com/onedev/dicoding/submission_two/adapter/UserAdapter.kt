@@ -1,5 +1,6 @@
 package com.onedev.dicoding.submission_two.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
@@ -10,18 +11,20 @@ import com.onedev.dicoding.submission_two.databinding.ListUserBinding
 import com.onedev.dicoding.submission_two.model.ItemSearchUser
 import com.onedev.dicoding.submission_two.ui.HomeFragmentDirections
 
-class UserAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolderRecyclerview>() {
 
-    private var listUsers: List<ItemSearchUser> = ArrayList()
+    private val mListUsers = ArrayList<ItemSearchUser>()
 
-    fun setListUser(listUsers: List<ItemSearchUser>) {
-        this.listUsers = listUsers
+    @SuppressLint("NotifyDataSetChanged")
+    fun setListUser(items: ArrayList<ItemSearchUser>) {
+        mListUsers.clear()
+        mListUsers.addAll(items)
+        notifyDataSetChanged()
     }
 
     inner class ViewHolderRecyclerview(private val binding: ListUserBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(position: Int) {
+        fun bind(items: ItemSearchUser) {
             with(binding) {
-                val items = listUsers[position]
                 Glide.with(itemView.context)
                     .load(items.avatar_url)
                     .circleCrop()
@@ -37,14 +40,14 @@ class UserAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, postition: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, postition: Int): UserAdapter.ViewHolderRecyclerview {
         val linearBinding = ListUserBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolderRecyclerview(linearBinding)
     }
 
-    override fun getItemCount(): Int = listUsers.size
+    override fun getItemCount(): Int = mListUsers.size
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        (holder as ViewHolderRecyclerview).bind(position)
+    override fun onBindViewHolder(holder: UserAdapter.ViewHolderRecyclerview, position: Int) {
+        holder.bind(mListUsers[position])
     }
 }
