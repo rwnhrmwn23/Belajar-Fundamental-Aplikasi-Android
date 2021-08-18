@@ -12,7 +12,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = MainRepository(application)
     val showProgress: LiveData<Boolean>
-    val usersData: LiveData<List<ItemSearchUser>>
+    val usersData: LiveData<ArrayList<ItemSearchUser>>
     val userDetail: LiveData<ItemDetailUser>
     val followerData: LiveData<FollowersAndFollowing>
     val followingData: LiveData<FollowersAndFollowing>

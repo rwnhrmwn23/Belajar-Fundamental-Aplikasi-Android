@@ -2,6 +2,7 @@ package com.onedev.dicoding.submission_two.repository
 
 import android.app.Application
 import android.util.Log
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.google.gson.Gson
 import com.onedev.dicoding.submission_two.MyApplication
@@ -20,32 +21,26 @@ class MainRepository(application: Application) {
     init {
         (application as MyApplication).getRetroComponent().inject(this)
     }
-
     val showProgress = MutableLiveData<Boolean>()
-    val usersData = MutableLiveData<List<ItemSearchUser>>()
+    val usersData = MutableLiveData<ArrayList<ItemSearchUser>>()
     val usersDetail = MutableLiveData<ItemDetailUser>()
     val followerData = MutableLiveData<FollowersAndFollowing>()
     val followingData = MutableLiveData<FollowersAndFollowing>()
 
     fun searchUserByUsername(username: String) {
-        usersData.value = null
-        showProgress.value = true
         mService.searchUserByUsername(username)
             .enqueue(object : Callback<SearchUserResponse> {
                 override fun onResponse(call: Call<SearchUserResponse>, response: Response<SearchUserResponse>) {
                     if (response.isSuccessful) {
                         if (response.body()!!.total_count > 0)
-                            usersData.value = response.body()!!.items
+                            usersData.postValue(response.body()!!.items)
                         else
-                            usersData.value = null
+                            usersData.postValue(null)
                     }
-
-                    showProgress.value = false
                     Log.d(TAG, "onResponse searchUserByUsername: ${Gson().toJson(response.body())}")
                 }
 
                 override fun onFailure(call: Call<SearchUserResponse>, t: Throwable) {
-                    showProgress.value = false
                     Log.d(TAG, "onFailure searchUserByUsername: ${t.localizedMessage}")
                 }
             })
@@ -57,9 +52,9 @@ class MainRepository(application: Application) {
             .enqueue(object : Callback<ItemDetailUser> {
                 override fun onResponse(call: Call<ItemDetailUser>, response: Response<ItemDetailUser>) {
                     if (response.isSuccessful)
-                        usersDetail.value = response.body()!!
+                        usersDetail.postValue(response.body()!!)
                     else
-                        usersData.value = null
+                        usersData.postValue(null)
 
                     showProgress.value = false
                     Log.d(TAG, "onResponse getUserDetail: ${Gson().toJson(response.body())}")
@@ -78,9 +73,9 @@ class MainRepository(application: Application) {
             .enqueue(object : Callback<FollowersAndFollowing> {
                 override fun onResponse(call: Call<FollowersAndFollowing>, response: Response<FollowersAndFollowing>) {
                     if (response.isSuccessful)
-                        followerData.value = response.body()!!
+                        followerData.postValue(response.body()!!)
                     else
-                        followerData.value = null
+                        followerData.postValue(null)
 
                     showProgress.value = false
                     Log.d(TAG, "onResponse getFollowers: ${Gson().toJson(response.body())}")
@@ -99,9 +94,9 @@ class MainRepository(application: Application) {
             .enqueue(object : Callback<FollowersAndFollowing> {
                 override fun onResponse(call: Call<FollowersAndFollowing>, response: Response<FollowersAndFollowing>) {
                     if (response.isSuccessful)
-                        followingData.value = response.body()!!
+                        followingData.postValue(response.body()!!)
                     else
-                        followingData.value = null
+                        followingData.postValue(null)
 
                     showProgress.value = false
                     Log.d(TAG, "onResponse getFollowing: ${Gson().toJson(response.body())}")

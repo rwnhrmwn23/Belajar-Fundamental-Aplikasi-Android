@@ -78,8 +78,12 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
         viewModel.showProgress.observe(viewLifecycleOwner, {
             if (it) {
                 binding.shimmerViewContainer.startShimmerAnimation()
+                binding.shimmerViewContainer.visibility = View.VISIBLE
+                binding.llLayout.visibility = View.GONE
             } else {
                 binding.shimmerViewContainer.stopShimmerAnimation()
+                binding.shimmerViewContainer.visibility = View.GONE
+                binding.llLayout.visibility = View.VISIBLE
             }
         })
 
@@ -97,9 +101,6 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 binding.tvFollowing.text = Support.convertToDec(it.following.toDouble())
                 binding.tvLocation.text = it.location
                 binding.tvCompany.text = it.company
-
-                binding.llLayout.visibility = View.VISIBLE
-                binding.shimmerViewContainer.visibility = View.GONE
             }
         })
     }

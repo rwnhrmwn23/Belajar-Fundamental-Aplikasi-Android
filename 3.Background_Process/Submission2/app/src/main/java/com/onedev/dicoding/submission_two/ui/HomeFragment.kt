@@ -1,5 +1,6 @@
 package com.onedev.dicoding.submission_two.ui
 
+import android.annotation.SuppressLint
 import android.app.SearchManager
 import android.content.Context
 import android.os.Bundle
@@ -21,15 +22,8 @@ import java.lang.Exception
 
 class HomeFragment : Fragment() {
 
-    companion object {
-        private const val STATE_RESULT = "state_result"
-    }
-
     private lateinit var viewModel: MainViewModel
     private lateinit var adapter: UserAdapter
-    private lateinit var preferenceManager: PreferenceManager
-    private var usernameSearch: String? = null
-    private var searchView: SearchView? = null
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
@@ -41,35 +35,43 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Support.showActionBar(requireActivity())
 
-        preferenceManager = PreferenceManager(requireContext())
-
-        if (savedInstanceState != null) {
-            val result = savedInstanceState.getString(STATE_RESULT)
-            if (result != null) {
-                searchUserByUsername(result)
-            }
-        }
-
-        adapter = UserAdapter()
+        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         setHasOptionsMenu(true)
-        binding.rvUser.setHasFixedSize(true)
+
+        adapter = UserAdapter()
+        adapter.notifyDataSetChanged()
         binding.rvUser.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvUser.adapter = adapter
+
+        viewModel.usersData.observe(viewLifecycleOwner, { data ->
+            if (data == null) {
+                binding.rvUser.visibility = View.GONE
+                binding.llNotSearching.visibility = View.GONE
+                binding.llNoDataAvailable.visibility = View.VISIBLE
+            } else {
+                adapter.setListUser(data)
+                binding.rvUser.visibility = View.VISIBLE
+                binding.llNotSearching.visibility = View.GONE
+                binding.llNoDataAvailable.visibility = View.GONE
+            }
+            showLoading(false)
+        })
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        try {
-            usernameSearch = preferenceManager.getString(Constant.USERNAME_SEARCH)
-            if (usernameSearch != null) {
-                outState.putString(STATE_RESULT, usernameSearch)
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
+    private fun showLoading(state: Boolean) {
+        if (state) {
+            binding.llNotSearching.visibility = View.GONE
+            binding.shimmerViewContainer.startShimmerAnimation()
+            binding.shimmerViewContainer.visibility = View.VISIBLE
+        } else {
+            binding.shimmerViewContainer.stopShimmerAnimation()
+            binding.shimmerViewContainer.visibility = View.GONE
         }
     }
 
@@ -77,14 +79,14 @@ class HomeFragment : Fragment() {
         menuInflater.inflate(R.menu.main_menu, menu)
 
         val searchManager = activity?.getSystemService(Context.SEARCH_SERVICE) as SearchManager
-        searchView = menu.findItem(R.id.menu_search).actionView as SearchView
+        val searchView = menu.findItem(R.id.menu_search).actionView as SearchView
 
-        searchView?.setSearchableInfo(searchManager.getSearchableInfo(activity?.componentName))
-        searchView?.queryHint = resources.getString(R.string.search_hint)
-        searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(activity?.componentName))
+        searchView.queryHint = resources.getString(R.string.search_hint)
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
-                preferenceManager.putString(Constant.USERNAME_SEARCH, query)
-                searchUserByUsername(query)
+                showLoading(true)
+                viewModel.searchUserByUsername(query)
                 return true
             }
 
@@ -101,49 +103,6 @@ class HomeFragment : Fragment() {
         } else {
             false
         }
-    }
-
-    private fun searchUserByUsername(username: String) {
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-
-        viewModel.searchUserByUsername(username)
-
-        viewModel.showProgress.observe(viewLifecycleOwner, { showProgress ->
-
-            viewModel.usersData.observe(viewLifecycleOwner, { data ->
-                if (showProgress == true && data == null) {
-                    showLoadingProgress()
-                } else if (showProgress == false && data == null) {
-                    showDataNotFound()
-                } else if (showProgress == false && data != null) {
-                    showDataFound(data)
-                }
-            })
-        })
-    }
-
-    private fun showDataFound(data: List<ItemSearchUser>) {
-        adapter.setListUser(data)
-        binding.rvUser.adapter = adapter
-        binding.rvUser.visibility = View.VISIBLE
-        binding.llNoDataAvailable.visibility = View.GONE
-        binding.shimmerViewContainer.visibility = View.GONE
-        binding.shimmerViewContainer.stopShimmerAnimation()
-    }
-
-    private fun showDataNotFound() {
-        binding.rvUser.visibility = View.GONE
-        binding.shimmerViewContainer.visibility = View.GONE
-        binding.shimmerViewContainer.stopShimmerAnimation()
-        binding.llNoDataAvailable.visibility = View.VISIBLE
-    }
-
-    private fun showLoadingProgress() {
-        binding.rvUser.visibility = View.GONE
-        binding.llNotSearching.visibility = View.GONE
-        binding.llNoDataAvailable.visibility = View.GONE
-        binding.shimmerViewContainer.visibility = View.VISIBLE
-        binding.shimmerViewContainer.startShimmerAnimation()
     }
 
     override fun onResume() {
