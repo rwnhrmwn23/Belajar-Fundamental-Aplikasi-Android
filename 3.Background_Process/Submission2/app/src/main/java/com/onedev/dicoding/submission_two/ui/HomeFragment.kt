@@ -13,12 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.dicoding.submission_two.R
 import com.onedev.dicoding.submission_two.adapter.UserAdapter
 import com.onedev.dicoding.submission_two.databinding.FragmentHomeBinding
-import com.onedev.dicoding.submission_two.model.ItemSearchUser
-import com.onedev.dicoding.submission_two.util.Constant
-import com.onedev.dicoding.submission_two.util.PreferenceManager
 import com.onedev.dicoding.submission_two.util.Support
 import com.onedev.dicoding.submission_two.viewmodel.MainViewModel
-import java.lang.Exception
 
 class HomeFragment : Fragment() {
 
@@ -67,10 +63,10 @@ class HomeFragment : Fragment() {
     private fun showLoading(state: Boolean) {
         if (state) {
             binding.llNotSearching.visibility = View.GONE
-            binding.shimmerViewContainer.startShimmerAnimation()
+            binding.shimmerViewContainer.startShimmer()
             binding.shimmerViewContainer.visibility = View.VISIBLE
         } else {
-            binding.shimmerViewContainer.stopShimmerAnimation()
+            binding.shimmerViewContainer.stopShimmer()
             binding.shimmerViewContainer.visibility = View.GONE
         }
     }
@@ -107,11 +103,11 @@ class HomeFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        binding.shimmerViewContainer.startShimmerAnimation()
+        binding.shimmerViewContainer.startShimmer()
     }
 
     override fun onPause() {
-        binding.shimmerViewContainer.stopShimmerAnimation()
+        binding.shimmerViewContainer.stopShimmer()
         super.onPause()
     }
 

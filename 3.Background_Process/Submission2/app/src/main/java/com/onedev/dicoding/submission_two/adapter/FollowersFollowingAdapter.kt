@@ -9,8 +9,9 @@ import com.onedev.dicoding.submission_two.R
 import com.onedev.dicoding.submission_two.databinding.ListUserBinding
 import com.onedev.dicoding.submission_two.model.ItemFollowersAndFollowingItem
 import com.onedev.dicoding.submission_two.ui.FollowersFollowingFragmentDirections
+import com.onedev.dicoding.submission_two.util.Support.loadImage
 
-class FollowersAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class FollowersFollowingAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private var listUsers: List<ItemFollowersAndFollowingItem> = ArrayList()
 
@@ -22,11 +23,7 @@ class FollowersAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         fun bind(position: Int) {
             with(binding) {
                 val items = listUsers[position]
-                Glide.with(itemView.context)
-                    .load(items.avatar_url)
-                    .circleCrop()
-                    .placeholder(R.drawable.ic_baseline_person)
-                    .into(imgAvatar)
+                imgAvatar.loadImage(items.avatar_url)
                 tvUsername.text = items.login
                 itemView.setOnClickListener {
                     val toDetailUsers = FollowersFollowingFragmentDirections.actionFollowersFollowingFragmentToDetailHomeFragment()

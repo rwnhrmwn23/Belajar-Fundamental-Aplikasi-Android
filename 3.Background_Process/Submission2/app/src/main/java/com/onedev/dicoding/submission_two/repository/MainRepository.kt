@@ -2,7 +2,6 @@ package com.onedev.dicoding.submission_two.repository
 
 import android.app.Application
 import android.util.Log
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.google.gson.Gson
 import com.onedev.dicoding.submission_two.MyApplication

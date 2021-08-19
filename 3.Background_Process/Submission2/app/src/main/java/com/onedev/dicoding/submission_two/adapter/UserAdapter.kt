@@ -5,11 +5,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.onedev.dicoding.submission_two.R
 import com.onedev.dicoding.submission_two.databinding.ListUserBinding
 import com.onedev.dicoding.submission_two.model.ItemSearchUser
 import com.onedev.dicoding.submission_two.ui.HomeFragmentDirections
+import com.onedev.dicoding.submission_two.util.Support.loadImage
 
 class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolderRecyclerview>() {
 
@@ -25,11 +24,7 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolderRecyclerview>() {
     inner class ViewHolderRecyclerview(private val binding: ListUserBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(items: ItemSearchUser) {
             with(binding) {
-                Glide.with(itemView.context)
-                    .load(items.avatar_url)
-                    .circleCrop()
-                    .placeholder(R.drawable.ic_baseline_person)
-                    .into(imgAvatar)
+                imgAvatar.loadImage(items.avatar_url)
                 tvUsername.text = items.login
                 itemView.setOnClickListener {
                     val toDetailUsers = HomeFragmentDirections.actionHomeFragmentToDetailHomeFragment()

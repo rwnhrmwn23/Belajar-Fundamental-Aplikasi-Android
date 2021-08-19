@@ -8,12 +8,12 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
-import com.bumptech.glide.Glide
 import com.onedev.dicoding.submission_two.R
 import com.onedev.dicoding.submission_two.databinding.FragmentDetailHomeBinding
 import com.onedev.dicoding.submission_two.util.Constant
 import com.onedev.dicoding.submission_two.util.PreferenceManager
 import com.onedev.dicoding.submission_two.util.Support
+import com.onedev.dicoding.submission_two.util.Support.loadImage
 import com.onedev.dicoding.submission_two.viewmodel.MainViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -77,11 +77,11 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
         viewModel.showProgress.observe(viewLifecycleOwner, {
             if (it) {
-                binding.shimmerViewContainer.startShimmerAnimation()
+                binding.shimmerViewContainer.startShimmer()
                 binding.shimmerViewContainer.visibility = View.VISIBLE
                 binding.llLayout.visibility = View.GONE
             } else {
-                binding.shimmerViewContainer.stopShimmerAnimation()
+                binding.shimmerViewContainer.stopShimmer()
                 binding.shimmerViewContainer.visibility = View.GONE
                 binding.llLayout.visibility = View.VISIBLE
             }
@@ -89,11 +89,7 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
         viewModel.userDetail.observe(viewLifecycleOwner, {
             lifecycleScope.launch(Dispatchers.Main) {
-                Glide.with(requireContext())
-                    .load(it?.avatar_url)
-                    .circleCrop()
-                    .placeholder(R.drawable.ic_baseline_person)
-                    .into(binding.imgAvatar)
+                it?.avatar_url?.let { it1 -> binding.imgAvatar.loadImage(it1) }
                 binding.tvToolbarTitle.text = it.login
                 binding.tvName.text = it.name
                 binding.tvRepository.text = getString(R.string.repository, Support.convertToDec(it.public_repos.toDouble()))
@@ -133,11 +129,11 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
     override fun onResume() {
         super.onResume()
-        binding.shimmerViewContainer.startShimmerAnimation()
+        binding.shimmerViewContainer.startShimmer()
     }
 
     override fun onPause() {
-        binding.shimmerViewContainer.stopShimmerAnimation()
+        binding.shimmerViewContainer.stopShimmer()
         super.onPause()
     }
 }

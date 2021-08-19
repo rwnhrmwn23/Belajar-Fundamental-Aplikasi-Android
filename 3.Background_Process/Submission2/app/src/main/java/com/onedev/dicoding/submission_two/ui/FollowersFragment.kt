@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.onedev.dicoding.submission_two.adapter.FollowersAdapter
+import com.onedev.dicoding.submission_two.adapter.FollowersFollowingAdapter
 import com.onedev.dicoding.submission_two.databinding.FragmentFollowersBinding
 import com.onedev.dicoding.submission_two.util.Constant
 import com.onedev.dicoding.submission_two.util.PreferenceManager
@@ -16,7 +16,7 @@ import com.onedev.dicoding.submission_two.viewmodel.MainViewModel
 class FollowersFragment : Fragment() {
     private lateinit var preferenceManager: PreferenceManager
     private lateinit var viewModel: MainViewModel
-    private lateinit var adapter: FollowersAdapter
+    private lateinit var adapter: FollowersFollowingAdapter
     private var _binding: FragmentFollowersBinding? = null
     private val binding get() = _binding!!
 
@@ -32,7 +32,7 @@ class FollowersFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        adapter = FollowersAdapter()
+        adapter = FollowersFollowingAdapter()
         preferenceManager = PreferenceManager(requireContext())
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
@@ -40,10 +40,10 @@ class FollowersFragment : Fragment() {
 
         viewModel.showProgress.observe(viewLifecycleOwner, {
             if (it) {
-                binding.shimmerViewContainer.startShimmerAnimation()
+                binding.shimmerViewContainer.startShimmer()
                 binding.shimmerViewContainer.visibility = View.VISIBLE
             } else {
-                binding.shimmerViewContainer.stopShimmerAnimation()
+                binding.shimmerViewContainer.stopShimmer()
                 binding.shimmerViewContainer.visibility = View.GONE
             }
         })
@@ -66,11 +66,11 @@ class FollowersFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        binding.shimmerViewContainer.startShimmerAnimation()
+        binding.shimmerViewContainer.startShimmer()
     }
 
     override fun onPause() {
-        binding.shimmerViewContainer.stopShimmerAnimation()
+        binding.shimmerViewContainer.stopShimmer()
         super.onPause()
     }
 

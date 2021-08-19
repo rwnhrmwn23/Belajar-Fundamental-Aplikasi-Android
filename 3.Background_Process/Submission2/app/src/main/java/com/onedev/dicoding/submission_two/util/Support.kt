@@ -1,7 +1,10 @@
 package com.onedev.dicoding.submission_two.util
 
 import android.app.Activity
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
+import com.onedev.dicoding.submission_two.R
 import java.text.DecimalFormat
 
 object Support {
@@ -29,5 +32,13 @@ object Support {
 
     fun hideActionBar(activity: Activity) {
         (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
+    }
+
+    fun ImageView.loadImage(url: String) {
+        Glide.with(context)
+            .load(url)
+            .circleCrop()
+            .placeholder(R.drawable.ic_baseline_person)
+            .into(this)
     }
 }
