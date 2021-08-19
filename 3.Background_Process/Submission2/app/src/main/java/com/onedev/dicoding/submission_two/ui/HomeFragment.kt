@@ -21,14 +21,14 @@ class HomeFragment : Fragment() {
     private lateinit var viewModel: MainViewModel
     private lateinit var adapter: UserAdapter
     private var _binding: FragmentHomeBinding? = null
-    private val binding get() = _binding!!
+    private val binding get() = _binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     @SuppressLint("NotifyDataSetChanged")
@@ -42,19 +42,19 @@ class HomeFragment : Fragment() {
 
         adapter = UserAdapter()
         adapter.notifyDataSetChanged()
-        binding.rvUser.layoutManager = LinearLayoutManager(requireContext())
-        binding.rvUser.adapter = adapter
+        binding?.rvUser?.layoutManager = LinearLayoutManager(requireContext())
+        binding?.rvUser?.adapter = adapter
 
         viewModel.usersData.observe(viewLifecycleOwner, { data ->
             if (data == null) {
-                binding.rvUser.visibility = View.GONE
-                binding.llNotSearching.visibility = View.GONE
-                binding.llNoDataAvailable.visibility = View.VISIBLE
+                binding?.rvUser?.visibility = View.GONE
+                binding?.llNotSearching?.visibility = View.GONE
+                binding?.llNoDataAvailable?.visibility = View.VISIBLE
             } else {
                 adapter.setListUser(data)
-                binding.rvUser.visibility = View.VISIBLE
-                binding.llNotSearching.visibility = View.GONE
-                binding.llNoDataAvailable.visibility = View.GONE
+                binding?.rvUser?.visibility = View.VISIBLE
+                binding?.llNotSearching?.visibility = View.GONE
+                binding?.llNoDataAvailable?.visibility = View.GONE
             }
             showLoading(false)
         })
@@ -62,12 +62,12 @@ class HomeFragment : Fragment() {
 
     private fun showLoading(state: Boolean) {
         if (state) {
-            binding.llNotSearching.visibility = View.GONE
-            binding.shimmerViewContainer.startShimmer()
-            binding.shimmerViewContainer.visibility = View.VISIBLE
+            binding?.llNotSearching?.visibility = View.GONE
+            binding?.shimmerViewContainer?.startShimmer()
+            binding?.shimmerViewContainer?.visibility = View.VISIBLE
         } else {
-            binding.shimmerViewContainer.stopShimmer()
-            binding.shimmerViewContainer.visibility = View.GONE
+            binding?.shimmerViewContainer?.stopShimmer()
+            binding?.shimmerViewContainer?.visibility = View.GONE
         }
     }
 
@@ -103,11 +103,11 @@ class HomeFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        binding.shimmerViewContainer.startShimmer()
+        binding?.shimmerViewContainer?.startShimmer()
     }
 
     override fun onPause() {
-        binding.shimmerViewContainer.stopShimmer()
+        binding?.shimmerViewContainer?.stopShimmer()
         super.onPause()
     }
 

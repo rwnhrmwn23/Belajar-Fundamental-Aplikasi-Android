@@ -13,7 +13,7 @@ class PreferenceManager(context: Context) {
         editor.apply()
     }
 
-    fun getString(key: String): String {
-        return sharedPreferences.getString(key, null)!!
+    fun getString(key: String): String? {
+        return sharedPreferences.getString(key, null)
     }
 }

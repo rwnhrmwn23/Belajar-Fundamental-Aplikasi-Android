@@ -14,23 +14,25 @@ import com.onedev.dicoding.submission_two.util.Support
 
 class SplashFragment : Fragment() {
     private var _binding: FragmentSplashBinding? = null
-    private val binding get() = _binding!!
+    private val binding get() = _binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentSplashBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Support.hideActionBar(requireActivity())
 
-        Handler(Looper.myLooper()!!).postDelayed({
-            view.findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
-        }, 500)
+        Looper.myLooper()?.let {
+            Handler(it).postDelayed({
+                view.findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+            }, 2000)
+        }
     }
 
     override fun onDestroyView() {

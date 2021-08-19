@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             .beginTransaction()
             .add(R.id.setting_holder, MyPreferenceFragment())
             .commit()
-        
+
 //        Get Value From Preference Setting
 //        val prefs = PreferenceManager.getDefaultSharedPreferences(this)
 //        val name = prefs.getString(getString(R.string.key_name), getString(R.string.nothing))

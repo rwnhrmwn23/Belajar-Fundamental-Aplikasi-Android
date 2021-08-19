@@ -31,10 +31,12 @@ class MainRepository(application: Application) {
             .enqueue(object : Callback<SearchUserResponse> {
                 override fun onResponse(call: Call<SearchUserResponse>, response: Response<SearchUserResponse>) {
                     if (response.isSuccessful) {
-                        if (response.body()!!.total_count > 0)
-                            usersData.postValue(response.body()!!.items)
-                        else
-                            usersData.postValue(null)
+                        response.body()?.total_count?.let {
+                            if (it > 0)
+                                 usersData.postValue(response.body()?.items)
+                            else
+                                usersData.postValue(null)
+                        }
                     }
                     Log.d(TAG, "onResponse searchUserByUsername: ${Gson().toJson(response.body())}")
                 }
@@ -51,7 +53,7 @@ class MainRepository(application: Application) {
             .enqueue(object : Callback<ItemDetailUser> {
                 override fun onResponse(call: Call<ItemDetailUser>, response: Response<ItemDetailUser>) {
                     if (response.isSuccessful)
-                        usersDetail.postValue(response.body()!!)
+                        usersDetail.postValue(response.body())
                     else
                         usersData.postValue(null)
 
@@ -72,7 +74,7 @@ class MainRepository(application: Application) {
             .enqueue(object : Callback<FollowersAndFollowing> {
                 override fun onResponse(call: Call<FollowersAndFollowing>, response: Response<FollowersAndFollowing>) {
                     if (response.isSuccessful)
-                        followerData.postValue(response.body()!!)
+                        followerData.postValue(response.body())
                     else
                         followerData.postValue(null)
 
@@ -93,7 +95,7 @@ class MainRepository(application: Application) {
             .enqueue(object : Callback<FollowersAndFollowing> {
                 override fun onResponse(call: Call<FollowersAndFollowing>, response: Response<FollowersAndFollowing>) {
                     if (response.isSuccessful)
-                        followingData.postValue(response.body()!!)
+                        followingData.postValue(response.body())
                     else
                         followingData.postValue(null)
 

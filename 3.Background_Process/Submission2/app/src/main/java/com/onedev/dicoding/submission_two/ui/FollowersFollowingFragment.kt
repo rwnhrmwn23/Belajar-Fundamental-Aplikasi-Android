@@ -13,16 +13,16 @@ import com.onedev.dicoding.submission_two.util.Support
 
 class FollowersFollowingFragment : Fragment() {
     private var _binding: FragmentFollowersFollowingBinding? = null
-    private val binding get() = _binding!!
+    private val binding get() = _binding
     private val args: FollowersFollowingFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentFollowersFollowingBinding.inflate(layoutInflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,8 +30,8 @@ class FollowersFollowingFragment : Fragment() {
 
         Support.hideActionBar(requireActivity())
 
-        binding.tvToolbarTitle.text = args.username
-        binding.toolbar.setNavigationOnClickListener {
+        binding?.tvToolbarTitle?.text = args.username
+        binding?.toolbar?.setNavigationOnClickListener {
             val toDetailHomeFragment = FollowersFollowingFragmentDirections.actionFollowersFollowingFragmentToDetailHomeFragment()
             toDetailHomeFragment.username = args.username
             it.findNavController().navigate(toDetailHomeFragment)
@@ -41,10 +41,10 @@ class FollowersFollowingFragment : Fragment() {
     }
 
     private fun selectPage(pageIndex: Int) {
-        binding.viewPager.adapter = TabFollowerAndFollowingAdapter(requireContext(), childFragmentManager)
-        binding.tabs.setupWithViewPager(binding.viewPager)
-        binding.tabs.setScrollPosition(pageIndex, 0F, true)
-        binding.viewPager.currentItem = pageIndex
+        binding?.viewPager?.adapter = TabFollowerAndFollowingAdapter(requireContext(), childFragmentManager)
+        binding?.tabs?.setupWithViewPager(binding?.viewPager)
+        binding?.tabs?.setScrollPosition(pageIndex, 0F, true)
+        binding?.viewPager?.currentItem = pageIndex
     }
 
     override fun onDestroyView() {

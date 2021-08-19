@@ -1,5 +1,6 @@
 package com.onedev.dicoding.submission_two.di
 
+import com.onedev.dicoding.submission_two.BuildConfig
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -11,14 +12,13 @@ import javax.inject.Singleton
 class RetroModule {
     companion object {
         private const val BASE_URL = "https://api.github.com/"
-        private const val ACCESS_TOKEN = "token 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"
 
         private val okHttpClient = OkHttpClient.Builder()
             .addInterceptor { chain ->
                 val original = chain.request()
                 val requestBuilder = original.newBuilder()
                     .method(original.method(), original.body())
-                    .addHeader("Authorization", ACCESS_TOKEN)
+                    .addHeader("Authorization", BuildConfig.KEY)
                 val request = requestBuilder.build()
                 chain.proceed(request)
             }

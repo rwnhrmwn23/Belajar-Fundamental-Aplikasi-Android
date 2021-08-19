@@ -27,11 +27,11 @@ object Support {
     }
 
     fun showActionBar(activity: Activity) {
-        (activity as AppCompatActivity?)!!.supportActionBar!!.show()
+        (activity as AppCompatActivity?)?.supportActionBar?.show()
     }
 
     fun hideActionBar(activity: Activity) {
-        (activity as AppCompatActivity?)!!.supportActionBar!!.hide()
+        (activity as AppCompatActivity?)?.supportActionBar?.hide()
     }
 
     fun ImageView.loadImage(url: String) {

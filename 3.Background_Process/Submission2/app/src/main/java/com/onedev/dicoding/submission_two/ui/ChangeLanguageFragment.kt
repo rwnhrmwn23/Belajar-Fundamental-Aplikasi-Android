@@ -14,15 +14,15 @@ import com.onedev.dicoding.submission_two.util.Support
 
 class ChangeLanguageFragment : Fragment(), View.OnClickListener {
     private var _binding: FragmentChangeLanguageBinding? = null
-    private val binding get() = _binding!!
+    private val binding get() = _binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentChangeLanguageBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,16 +30,16 @@ class ChangeLanguageFragment : Fragment(), View.OnClickListener {
 
         Support.hideActionBar(requireActivity())
 
-        binding.toolbar.setNavigationOnClickListener {
+        binding?.toolbar?.setNavigationOnClickListener {
             it.findNavController().navigate(R.id.action_changeLanguageFragment_to_settingFragment)
         }
 
         if (LocaleHelper.getLanguage(requireContext()) == "in")
-            binding.rbIndonesia.isChecked = true
+            binding?.rbIndonesia?.isChecked = true
         else
-            binding.rbEnglish.isChecked = true
+            binding?.rbEnglish?.isChecked = true
 
-        binding.btnSaveLanguage.setOnClickListener(this)
+        binding?.btnSaveLanguage?.setOnClickListener(this)
     }
 
     override fun onDestroyView() {
@@ -49,8 +49,8 @@ class ChangeLanguageFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v) {
-            binding.btnSaveLanguage -> {
-                val checkRadioButtonId = binding.rgChangeLanguage.checkedRadioButtonId
+            binding?.btnSaveLanguage -> {
+                val checkRadioButtonId = binding?.rgChangeLanguage?.checkedRadioButtonId
                 if (checkRadioButtonId != -1) {
                     var chooseLanguage: String? = null
                     when (checkRadioButtonId) {

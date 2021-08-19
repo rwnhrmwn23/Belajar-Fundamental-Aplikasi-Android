@@ -4,8 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.onedev.dicoding.submission_two.R
 import com.onedev.dicoding.submission_two.databinding.ListUserBinding
 import com.onedev.dicoding.submission_two.model.ItemFollowersAndFollowingItem
 import com.onedev.dicoding.submission_two.ui.FollowersFollowingFragmentDirections

@@ -22,16 +22,16 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
     private lateinit var preferenceManager: PreferenceManager
     private var _binding: FragmentDetailHomeBinding? = null
-    private val binding get() = _binding!!
+    private val binding get() = _binding
     private val args: DetailHomeFragmentArgs by navArgs()
     private lateinit var viewModel: MainViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentDetailHomeBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -41,20 +41,20 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
         preferenceManager = PreferenceManager(requireContext())
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        binding.toolbar.setNavigationOnClickListener {
+        binding?.toolbar?.setNavigationOnClickListener {
             it.findNavController().navigate(R.id.action_detailHomeFragment_to_homeFragment)
         }
 
-        binding.toolbar.setOnMenuItemClickListener {
+        binding?.toolbar?.setOnMenuItemClickListener {
             if (it.itemId == R.id.menu_share) {
                 val textToShare = getString(R.string.info_github_user) +
-                        "\n${getString(R.string.username)} : ${binding.tvToolbarTitle.text}" +
-                        "\n${getString(R.string.name)} : ${binding.tvName.text}" +
-                        "\n${Support.replaceSymbol(getString(R.string.repository))} : ${Support.replaceRepo(binding.tvRepository.text.toString())}" +
-                        "\n${getString(R.string.followers)} : ${Support.convertToDec(binding.tvFollowers.text.toString().toDouble())}" +
-                        "\n${getString(R.string.following)} : ${Support.convertToDec(binding.tvFollowing.text.toString().toDouble())}" +
-                        "\n${getString(R.string.location)} : ${binding.tvLocation.text}" +
-                        "\n${getString(R.string.company_name)} : ${binding.tvCompany.text}"
+                        "\n${getString(R.string.username)} : ${binding?.tvToolbarTitle?.text}" +
+                        "\n${getString(R.string.name)} : ${binding?.tvName?.text}" +
+                        "\n${Support.replaceSymbol(getString(R.string.repository))} : ${Support.replaceRepo(binding?.tvRepository?.text.toString())}" +
+                        "\n${getString(R.string.followers)} : ${Support.convertToDec(binding?.tvFollowers?.text.toString().toDouble())}" +
+                        "\n${getString(R.string.following)} : ${Support.convertToDec(binding?.tvFollowing?.text.toString().toDouble())}" +
+                        "\n${getString(R.string.location)} : ${binding?.tvLocation?.text}" +
+                        "\n${getString(R.string.company_name)} : ${binding?.tvCompany?.text}"
                 val intent = Intent()
                 intent.action = Intent.ACTION_SEND
                 intent.type = "text/plain"
@@ -66,37 +66,37 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
             }
         }
 
-        binding.llFollowers.setOnClickListener(this)
-        binding.llFollowing.setOnClickListener(this)
+        binding?.llFollowers?.setOnClickListener(this)
+        binding?.llFollowing?.setOnClickListener(this)
 
         bindUI()
     }
 
     private fun bindUI() {
-        viewModel.getUserDetail(args.username!!)
+        args.username?.let { viewModel.getUserDetail(it) }
 
         viewModel.showProgress.observe(viewLifecycleOwner, {
             if (it) {
-                binding.shimmerViewContainer.startShimmer()
-                binding.shimmerViewContainer.visibility = View.VISIBLE
-                binding.llLayout.visibility = View.GONE
+                binding?.shimmerViewContainer?.startShimmer()
+                binding?.shimmerViewContainer?.visibility = View.VISIBLE
+                binding?.llLayout?.visibility = View.GONE
             } else {
-                binding.shimmerViewContainer.stopShimmer()
-                binding.shimmerViewContainer.visibility = View.GONE
-                binding.llLayout.visibility = View.VISIBLE
+                binding?.shimmerViewContainer?.stopShimmer()
+                binding?.shimmerViewContainer?.visibility = View.GONE
+                binding?.llLayout?.visibility = View.VISIBLE
             }
         })
 
         viewModel.userDetail.observe(viewLifecycleOwner, {
             lifecycleScope.launch(Dispatchers.Main) {
-                it?.avatar_url?.let { it1 -> binding.imgAvatar.loadImage(it1) }
-                binding.tvToolbarTitle.text = it.login
-                binding.tvName.text = it.name
-                binding.tvRepository.text = getString(R.string.repository, Support.convertToDec(it.public_repos.toDouble()))
-                binding.tvFollowers.text = Support.convertToDec(it.followers.toDouble())
-                binding.tvFollowing.text = Support.convertToDec(it.following.toDouble())
-                binding.tvLocation.text = it.location
-                binding.tvCompany.text = it.company
+                it?.avatar_url?.let { url -> binding?.imgAvatar?.loadImage(url) }
+                binding?.tvToolbarTitle?.text = it.login
+                binding?.tvName?.text = it.name
+                binding?.tvRepository?.text = getString(R.string.repository, Support.convertToDec(it.public_repos.toDouble()))
+                binding?.tvFollowers?.text = Support.convertToDec(it.followers.toDouble())
+                binding?.tvFollowing?.text = Support.convertToDec(it.following.toDouble())
+                binding?.tvLocation?.text = it.location
+                binding?.tvCompany?.text = it.company
             }
         })
     }
@@ -108,32 +108,31 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v) {
-            binding.llFollowers -> {
-                val toFollowersFollowing =
-                    DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
+            binding?.llFollowers -> {
+                val toFollowersFollowing = DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
                 toFollowersFollowing.pageIndex = 0
-                toFollowersFollowing.username = binding.tvToolbarTitle.text.toString()
-                preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username!!)
-                v.findNavController().navigate(toFollowersFollowing)
+                toFollowersFollowing.username = binding?.tvToolbarTitle?.text.toString()
+                preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username)
+                v?.findNavController()?.navigate(toFollowersFollowing)
             }
-            binding.llFollowing -> {
+            binding?.llFollowing -> {
                 val toFollowersFollowing =
                     DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
                 toFollowersFollowing.pageIndex = 1
-                toFollowersFollowing.username = binding.tvToolbarTitle.text.toString()
-                preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username!!)
-                v.findNavController().navigate(toFollowersFollowing)
+                toFollowersFollowing.username = binding?.tvToolbarTitle?.text.toString()
+                preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username)
+                v?.findNavController()?.navigate(toFollowersFollowing)
             }
         }
     }
 
     override fun onResume() {
         super.onResume()
-        binding.shimmerViewContainer.startShimmer()
+        binding?.shimmerViewContainer?.startShimmer()
     }
 
     override fun onPause() {
-        binding.shimmerViewContainer.stopShimmer()
+        binding?.shimmerViewContainer?.stopShimmer()
         super.onPause()
     }
 }

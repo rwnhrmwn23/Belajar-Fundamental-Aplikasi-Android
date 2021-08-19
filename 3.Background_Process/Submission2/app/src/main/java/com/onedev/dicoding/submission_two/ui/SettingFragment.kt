@@ -14,15 +14,15 @@ import com.onedev.dicoding.submission_two.util.Support
 class SettingFragment : Fragment(), View.OnClickListener {
 
     private var _binding: FragmentSettingBinding? = null
-    private val binding get() = _binding!!
+    private val binding get() = _binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentSettingBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,16 +30,16 @@ class SettingFragment : Fragment(), View.OnClickListener {
 
         Support.hideActionBar(requireActivity())
 
-        binding.toolbar.setNavigationOnClickListener {
+        binding?.toolbar?.setNavigationOnClickListener {
             it.findNavController().navigate(R.id.action_settingFragment_to_homeFragment)
         }
 
         if (LocaleHelper.getLanguage(requireContext()) == "in")
-            binding.tvSelectedLanguage.text = getString(R.string.indonesia)
+            binding?.tvSelectedLanguage?.text = getString(R.string.indonesia)
         else
-            binding.tvSelectedLanguage.text = getString(R.string.english)
+            binding?.tvSelectedLanguage?.text = getString(R.string.english)
 
-        binding.relChangeLanguage.setOnClickListener(this)
+        binding?.relChangeLanguage?.setOnClickListener(this)
     }
 
     override fun onDestroyView() {
@@ -49,8 +49,8 @@ class SettingFragment : Fragment(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         when (v) {
-            binding.relChangeLanguage -> {
-                v.findNavController().navigate(R.id.action_settingFragment_to_changeLanguageFragment)
+            binding?.relChangeLanguage -> {
+                v?.findNavController()?.navigate(R.id.action_settingFragment_to_changeLanguageFragment)
             }
         }
     }

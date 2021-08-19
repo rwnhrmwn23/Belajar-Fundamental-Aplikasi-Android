@@ -18,15 +18,15 @@ class FollowersFragment : Fragment() {
     private lateinit var viewModel: MainViewModel
     private lateinit var adapter: FollowersFollowingAdapter
     private var _binding: FragmentFollowersBinding? = null
-    private val binding get() = _binding!!
+    private val binding get() = _binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentFollowersBinding.inflate(layoutInflater, container, false)
-        return binding.root
+        return binding?.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -36,41 +36,43 @@ class FollowersFragment : Fragment() {
         preferenceManager = PreferenceManager(requireContext())
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        viewModel.getFollowers(preferenceManager.getString(Constant.USERNAME))
+        preferenceManager.getString(Constant.USERNAME)?.let {
+            viewModel.getFollowers(it)
+        }
 
         viewModel.showProgress.observe(viewLifecycleOwner, {
             if (it) {
-                binding.shimmerViewContainer.startShimmer()
-                binding.shimmerViewContainer.visibility = View.VISIBLE
+                binding?.shimmerViewContainer?.startShimmer()
+                binding?.shimmerViewContainer?.visibility = View.VISIBLE
             } else {
-                binding.shimmerViewContainer.stopShimmer()
-                binding.shimmerViewContainer.visibility = View.GONE
+                binding?.shimmerViewContainer?.stopShimmer()
+                binding?.shimmerViewContainer?.visibility = View.GONE
             }
         })
 
         viewModel.followerData.observe(viewLifecycleOwner, {
             if (it.size > 0) {
                 adapter.setListUser(it)
-                binding.rvFollowers.layoutManager = LinearLayoutManager(requireContext())
-                binding.rvFollowers.setHasFixedSize(true)
-                binding.rvFollowers.adapter = adapter
+                binding?.rvFollowers?.layoutManager = LinearLayoutManager(requireContext())
+                binding?.rvFollowers?.setHasFixedSize(true)
+                binding?.rvFollowers?.adapter = adapter
 
-                binding.rvFollowers.visibility = View.VISIBLE
-                binding.llNoDataAvailable.visibility = View.GONE
+                binding?.rvFollowers?.visibility = View.VISIBLE
+                binding?.llNoDataAvailable?.visibility = View.GONE
             } else {
-                binding.rvFollowers.visibility = View.GONE
-                binding.llNoDataAvailable.visibility = View.VISIBLE
+                binding?.rvFollowers?.visibility = View.GONE
+                binding?.llNoDataAvailable?.visibility = View.VISIBLE
             }
         })
     }
 
     override fun onResume() {
         super.onResume()
-        binding.shimmerViewContainer.startShimmer()
+        binding?.shimmerViewContainer?.startShimmer()
     }
 
     override fun onPause() {
-        binding.shimmerViewContainer.stopShimmer()
+        binding?.shimmerViewContainer?.stopShimmer()
         super.onPause()
     }
 

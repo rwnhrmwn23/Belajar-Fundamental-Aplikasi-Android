@@ -1,7 +1,7 @@
 package com.onedev.dicoding.submission_two.util
 
 import android.content.Context
-import android.preference.PreferenceManager
+import androidx.preference.PreferenceManager
 import java.util.*
 
 object LocaleHelper {
@@ -11,9 +11,11 @@ object LocaleHelper {
         return getPersistedLanguage(context, Locale.getDefault().language)
     }
 
-    fun setLocale(context: Context, language: String?): Context {
+    fun setLocale(context: Context, language: String?): Context? {
         persist(context, language)
-        return updateResourcesLegacy(context, language!!)
+        return language?.let {
+            updateResourcesLegacy(context, it)
+        }
     }
 
     fun getPersistedLanguage(context: Context, defaultLanguage: String): String? {
@@ -28,8 +30,8 @@ object LocaleHelper {
         editor.apply()
     }
 
-    private fun updateResourcesLegacy(context: Context, language: String?): Context {
-        val locale = Locale(language!!)
+    private fun updateResourcesLegacy(context: Context, language: String): Context {
+        val locale = Locale(language)
         Locale.setDefault(locale)
         val resources = context.resources
         val configuration = resources.configuration
