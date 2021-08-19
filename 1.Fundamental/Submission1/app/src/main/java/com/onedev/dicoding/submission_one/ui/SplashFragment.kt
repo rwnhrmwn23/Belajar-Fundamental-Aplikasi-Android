@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import com.onedev.dicoding.submission_one.R
 import com.onedev.dicoding.submission_one.databinding.FragmentSplashBinding
 

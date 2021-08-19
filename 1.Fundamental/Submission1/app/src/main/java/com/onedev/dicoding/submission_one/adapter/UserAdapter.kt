@@ -9,6 +9,7 @@ import com.onedev.dicoding.submission_one.R
 import com.onedev.dicoding.submission_one.databinding.ListUserBinding
 import com.onedev.dicoding.submission_one.model.Users
 import com.onedev.dicoding.submission_one.ui.HomeFragmentDirections
+import com.onedev.dicoding.submission_one.util.Support.loadImage
 
 class UserAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -22,11 +23,7 @@ class UserAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         fun bind(position: Int) {
             with(binding) {
                 val items = listUsers[position]
-                Glide.with(itemView.context)
-                    .load(items.avatar)
-                    .circleCrop()
-                    .placeholder(R.drawable.ic_baseline_person)
-                    .into(imgAvatar)
+                items.avatar?.let { imgAvatar.loadImage(it) }
                 tvName.text = items.name
                 tvUsername.text = items.username
                 itemView.setOnClickListener {

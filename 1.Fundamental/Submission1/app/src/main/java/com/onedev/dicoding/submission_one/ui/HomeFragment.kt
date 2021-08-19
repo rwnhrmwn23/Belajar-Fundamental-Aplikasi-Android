@@ -42,9 +42,9 @@ class HomeFragment : Fragment() {
 
         viewModel.showProgress.observe(viewLifecycleOwner, {
             if (it == true)
-                binding.shimmerViewContainer.startShimmerAnimation()
+                binding.shimmerViewContainer.startShimmer()
             else
-                binding.shimmerViewContainer.stopShimmerAnimation()
+                binding.shimmerViewContainer.stopShimmer()
         })
 
         viewModel.usersData.observe(viewLifecycleOwner, {
@@ -60,11 +60,11 @@ class HomeFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        binding.shimmerViewContainer.startShimmerAnimation()
+        binding.shimmerViewContainer.startShimmer()
     }
 
     override fun onPause() {
-        binding.shimmerViewContainer.stopShimmerAnimation()
+        binding.shimmerViewContainer.stopShimmer()
         super.onPause()
     }
 

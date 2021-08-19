@@ -8,11 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
-import com.bumptech.glide.Glide
 import com.onedev.dicoding.submission_one.R
 import com.onedev.dicoding.submission_one.databinding.FragmentDetailHomeBinding
-import com.onedev.dicoding.submission_one.model.Users
 import com.onedev.dicoding.submission_one.util.Support
+import com.onedev.dicoding.submission_one.util.Support.loadImage
 
 class DetailHomeFragment : Fragment(), View.OnClickListener {
 
@@ -40,16 +39,12 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
     }
 
     private fun bindUI() {
-        Glide.with(this)
-            .load(args.dataUsers?.avatar)
-            .circleCrop()
-            .placeholder(R.drawable.ic_baseline_person)
-            .into(binding.imgAvatar)
+        args.dataUsers?.avatar?.let { binding.imgAvatar.loadImage(it) }
         binding.tvToolbarTitle.text = args.dataUsers?.username
         binding.tvName.text = args.dataUsers?.name
-        binding.tvRepository.text = Support.convertToDec(args.dataUsers?.repository!!.toDouble())
-        binding.tvFollowers.text = Support.convertToDec(args.dataUsers?.follower!!.toDouble())
-        binding.tvFollowing.text = Support.convertToDec(args.dataUsers?.following!!.toDouble())
+        binding.tvRepository.text = args.dataUsers?.repository?.let { Support.convertToDec(it.toDouble()) }
+        binding.tvFollowers.text = args.dataUsers?.follower?.let { Support.convertToDec(it.toDouble()) }
+        binding.tvFollowing.text = args.dataUsers?.following?.let { Support.convertToDec(it.toDouble()) }
         binding.tvLocation.text = args.dataUsers?.location
         binding.tvCompany.text = args.dataUsers?.company
     }
