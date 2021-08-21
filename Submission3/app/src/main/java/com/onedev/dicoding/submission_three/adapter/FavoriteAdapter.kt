@@ -5,31 +5,34 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.onedev.dicoding.submission_three.databinding.ListUserBinding
+import com.onedev.dicoding.submission_three.databinding.ListUserFavoriteBinding
 import com.onedev.dicoding.submission_three.model.ItemUser
+import com.onedev.dicoding.submission_three.ui.FavoriteFragmentDirections
 import com.onedev.dicoding.submission_three.ui.HomeFragmentDirections
+import com.onedev.dicoding.submission_three.util.IFavorite
 import com.onedev.dicoding.submission_three.util.Support.loadImage
 
-class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolderRecyclerview>() {
+class FavoriteAdapter(private val iFavorite: IFavorite) : RecyclerView.Adapter<FavoriteAdapter.ViewHolderRecyclerview>() {
 
     private val mListUsers = ArrayList<ItemUser>()
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setListUser(items: ArrayList<ItemUser>?) {
+    fun setListUser(items: ArrayList<ItemUser>) {
         mListUsers.clear()
-        items?.let {
-            mListUsers.addAll(it)
-        }
+        mListUsers.addAll(items)
         notifyDataSetChanged()
     }
 
-    inner class ViewHolderRecyclerview(private val binding: ListUserBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolderRecyclerview(private val binding: ListUserFavoriteBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(items: ItemUser) {
             with(binding) {
                 imgAvatar.loadImage(items.avatar_url)
                 tvUsername.text = items.login
+                imgDeleteFavorite.setOnClickListener {
+                    iFavorite.deleteFavorite(true, items.login)
+                }
                 itemView.setOnClickListener {
-                    val toDetailUsers = HomeFragmentDirections.actionHomeFragmentToDetailHomeFragment()
+                    val toDetailUsers = FavoriteFragmentDirections.actionFavoriteFragmentToDetailHomeFragment()
                     toDetailUsers.username = items.login
                     it.findNavController().navigate(toDetailUsers)
                 }
@@ -37,14 +40,14 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolderRecyclerview>() {
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, postition: Int): UserAdapter.ViewHolderRecyclerview {
-        val binding = ListUserBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+    override fun onCreateViewHolder(parent: ViewGroup, postition: Int): FavoriteAdapter.ViewHolderRecyclerview {
+        val binding = ListUserFavoriteBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolderRecyclerview(binding)
     }
 
     override fun getItemCount(): Int = mListUsers.size
 
-    override fun onBindViewHolder(holder: UserAdapter.ViewHolderRecyclerview, position: Int) {
+    override fun onBindViewHolder(holder: FavoriteAdapter.ViewHolderRecyclerview, position: Int) {
         holder.bind(mListUsers[position])
     }
 }

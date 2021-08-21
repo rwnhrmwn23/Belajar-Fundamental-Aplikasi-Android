@@ -1,6 +1,5 @@
 package com.onedev.dicoding.submission_three.model
 
-@
 data class ItemDetailUser(
     val avatar_url: String,
     val company: String,

@@ -21,7 +21,7 @@ class MainRepository(application: Application) {
         (application as MyApplication).getRetroComponent().inject(this)
     }
     val showProgress = MutableLiveData<Boolean>()
-    val usersData = MutableLiveData<ArrayList<ItemSearchUser>>()
+    val usersData = MutableLiveData<ArrayList<ItemUser>>()
     val usersDetail = MutableLiveData<ItemDetailUser>()
     val followerData = MutableLiveData<FollowersAndFollowing>()
     val followingData = MutableLiveData<FollowersAndFollowing>()

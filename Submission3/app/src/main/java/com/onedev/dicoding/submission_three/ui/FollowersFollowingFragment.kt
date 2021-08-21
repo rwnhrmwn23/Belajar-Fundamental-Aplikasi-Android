@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.onedev.dicoding.submission_three.adapter.TabFollowerAndFollowingAdapter
 import com.onedev.dicoding.submission_three.databinding.FragmentFollowersFollowingBinding
@@ -26,15 +28,7 @@ class FollowersFollowingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        Support.hideActionBar(requireActivity())
-
-        binding?.tvToolbarTitle?.text = args.username
-        binding?.toolbar?.setNavigationOnClickListener {
-            val toDetailHomeFragment = FollowersFollowingFragmentDirections.actionFollowersFollowingFragmentToDetailHomeFragment()
-            toDetailHomeFragment.username = args.username
-            it.findNavController().navigate(toDetailHomeFragment)
-        }
+        (activity as AppCompatActivity?)?.supportActionBar?.title = args.username
 
         selectPage(args.pageIndex)
     }

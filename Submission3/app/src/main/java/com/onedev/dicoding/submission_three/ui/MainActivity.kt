@@ -2,6 +2,9 @@ package com.onedev.dicoding.submission_three.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.databinding.ActivityMainBinding
 import com.onedev.dicoding.submission_three.util.LocaleHelper.getPersistedLanguage
@@ -18,6 +21,20 @@ class MainActivity : AppCompatActivity() {
 
         val language = getPersistedLanguage(this@MainActivity, "in")
         setLocale(this@MainActivity, language)
+
+        val navController = findNavController(R.id.fragmentContainerView)
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.homeFragment
+            )
+        )
+
+        setupActionBarWithNavController(navController, appBarConfiguration)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.fragmentContainerView)
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 
     override fun onBackPressed() {

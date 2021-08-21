@@ -93,16 +93,25 @@ class HomeFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return if (item.itemId == R.id.menu_setting) {
-            requireView().findNavController().navigate(R.id.action_homeFragment_to_settingFragment)
-            true
-        } else {
-            false
+        return when (item.itemId) {
+            R.id.menu_favorite -> {
+                requireView().findNavController().navigate(R.id.action_homeFragment_to_favoriteFragment)
+                true
+            }
+            R.id.menu_setting -> {
+                requireView().findNavController().navigate(R.id.action_homeFragment_to_settingFragment)
+                true
+            }
+            else -> {
+                false
+            }
         }
     }
 
     override fun onResume() {
         super.onResume()
+        adapter.setListUser(null)
+        binding?.llNotSearching?.visibility = View.VISIBLE
         binding?.shimmerViewContainer?.startShimmer()
     }
 

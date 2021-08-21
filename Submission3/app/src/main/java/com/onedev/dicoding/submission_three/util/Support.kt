@@ -1,9 +1,11 @@
 package com.onedev.dicoding.submission_three.util
 
 import android.app.Activity
+import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.Snackbar
 import com.onedev.dicoding.submission_three.R
 import java.text.DecimalFormat
 
@@ -40,5 +42,9 @@ object Support {
             .circleCrop()
             .placeholder(R.drawable.ic_baseline_person)
             .into(this)
+    }
+
+    fun showSnackBar(view: View, text: String) {
+        Snackbar.make(view, text, Snackbar.LENGTH_SHORT).show()
     }
 }

@@ -25,4 +25,19 @@
     <string name="info_github_user">User Github Info</string>
     <!--  Other string resources -->
     <string name="app_name">Github Users</string>
+    <string name="detail_user">Detail User</string>
+    <string name="button_to_add_favorite">Button to Add Favorite</string>
+    <string name="button_to_delete_favorite">Button to Delete Favorite</string>
+    <string name="success_add_favorite">Success Add User to Favorite</string>
+    <string name="success_delete_favorite">Success Delete User from Favorite</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorite_not_found">There are no users in the favorites list</string>
+    <string name="favorite">Favorite</string>
+    <string name="delete">Delete</string>
+    <string name="yes">Yes</string>
+    <string name="success_delete_all_favorite">Success Delete All Favorite</string>
+    <string name="no">No</string>
+    <string name="delete_all_favorite">Delete All Favorite</string>
+    <string name="confirmation_delete_all_favorite">Are you sure you want to delete all favorite?</string>
 </resources>

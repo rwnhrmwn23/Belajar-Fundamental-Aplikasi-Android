@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.databinding.FragmentChangeLanguageBinding
 import com.onedev.dicoding.submission_three.util.LocaleHelper
@@ -26,12 +27,6 @@ class ChangeLanguageFragment : Fragment(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        Support.hideActionBar(requireActivity())
-
-        binding?.toolbar?.setNavigationOnClickListener {
-            it.findNavController().navigate(R.id.action_changeLanguageFragment_to_settingFragment)
-        }
 
         if (LocaleHelper.getLanguage(requireContext()) == "in")
             binding?.rbIndonesia?.isChecked = true

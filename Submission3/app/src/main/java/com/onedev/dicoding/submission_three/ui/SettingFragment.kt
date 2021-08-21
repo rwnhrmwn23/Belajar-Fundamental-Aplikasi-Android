@@ -28,11 +28,6 @@ class SettingFragment : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        Support.hideActionBar(requireActivity())
-
-        binding?.toolbar?.setNavigationOnClickListener {
-            it.findNavController().navigate(R.id.action_settingFragment_to_homeFragment)
-        }
 
         if (LocaleHelper.getLanguage(requireContext()) == "in")
             binding?.tvSelectedLanguage?.text = getString(R.string.indonesia)
