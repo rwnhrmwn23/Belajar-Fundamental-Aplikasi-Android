@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pengguna Github</string>
+    <string name="username">Username</string>
+    <string name="name">Nama</string>
+    <string name="repository">%1$s Gudang</string>
+    <string name="followers">Pengikut</string>
+    <string name="following">Mengikuti</string>
+    <string name="company_name">Nama Perusahaan</string>
+    <string name="location">Lokasi</string>
+    <string name="user_github_image">Gambar Pengguna Github</string>
+    <string name="github_logo">Logo Github</string>
+    <string name="share_button">Tombol Bagikan</string>
+    <string name="search">Cari</string>
+    <string name="search_hint">Cari Username</string>
+    <string name="no_search_data">Anda belum mencari apa pun. Cari untuk menemukan orang-orang hebat di sini.</string>
+    <string name="username_not_found">Username Tidak Ditemukan</string>
+    <string name="followers_not_found">Pengikuti Tidak Ditemukan</string>
+    <string name="following_not_found">Mengikuti Tidak Ditemukan</string>
+    <string name="setting">Pengaturan</string>
+    <string name="language_icon">Icon Bahasa</string>
+    <string name="language">Bahasa</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="save">Simpan</string>
+    <string name="info_github_user">Info User Github</string>
+</resources>
