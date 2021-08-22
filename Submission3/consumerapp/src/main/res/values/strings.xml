@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Consumer Github Users</string>
+    <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="repository">%1$s Repository</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="company_name">Company Name</string>
+    <string name="location">Location</string>
+    <string name="user_github_image">User Github Image</string>
+    <string name="github_logo">Github Logo</string>
+    <string name="share_button">Share Button</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search Username</string>
+    <string name="no_search_data">You haven\'t searched for anything. Search to find great people here.</string>
+    <string name="username_not_found">Username Not Found</string>
+    <string name="followers_not_found">Followers Not Found</string>
+    <string name="following_not_found">Following Not Found</string>
+    <string name="setting">Setting</string>
+    <string name="language_icon">Language Icon</string>
+    <string name="language">Language</string>
+    <string name="english" translatable="false">English (United States)</string>
+    <string name="indonesia" translatable="false">Indonesia</string>
+    <string name="change_language">Change Language</string>
+    <string name="save">Save</string>
+    <string name="info_github_user">User Github Info</string>
+    <string name="detail_user">Detail User</string>
+    <string name="button_to_add_favorite">Button to Add Favorite</string>
+    <string name="button_to_delete_favorite">Button to Delete Favorite</string>
+    <string name="success_add_favorite">Success Add User to Favorite</string>
+    <string name="success_delete_favorite">Success Delete User from Favorite</string>
+    <string name="success_delete_all_favorite">Success Delete All Favorite</string>
+    <string name="favorite_not_found">There are no users in the favorites list</string>
+    <string name="favorite">Favorite</string>
+    <string name="delete">Delete</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete_all_favorite">Delete All Favorite</string>
+    <string name="confirmation_delete_all_favorite">Are you sure you want to delete all favorite?</string>
+</resources>

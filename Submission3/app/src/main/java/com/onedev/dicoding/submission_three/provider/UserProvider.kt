@@ -8,6 +8,9 @@ import android.database.Cursor
 import android.net.Uri
 import com.onedev.dicoding.submission_three.dao.FavoriteDao
 import com.onedev.dicoding.submission_three.database.FavoriteDatabase
+import com.onedev.dicoding.submission_three.util.Support.AUTHORITY
+import com.onedev.dicoding.submission_three.util.Support.CONTENT_URI
+import com.onedev.dicoding.submission_three.util.Support.TABLE_NAME
 import com.onedev.dicoding.submission_three.util.Support.toItemUser
 
 class UserProvider : ContentProvider() {
@@ -15,22 +18,7 @@ class UserProvider : ContentProvider() {
     companion object {
         private const val FAVORITE = 1
         private const val FAVORITE_USER_ID = 2
-
-        private const val AUTHORITY = "com.onedev.dicoding.submission_three"
-        private const val SCHEME = "content"
-        private const val TABLE_NAME = "tb_favorite"
-
-        const val USER_ID = "id"
-        const val USER_USERNAME = "login"
-        const val USER_AVATAR_URL = "avatar_url"
-
         private lateinit var favoriteDao: FavoriteDao
-
-        val CONTENT_URI: Uri = Uri.Builder().scheme(SCHEME)
-            .authority(AUTHORITY)
-            .appendPath(TABLE_NAME)
-            .build()
-
         private val sUriMatcher = UriMatcher(UriMatcher.NO_MATCH)
 
         init {

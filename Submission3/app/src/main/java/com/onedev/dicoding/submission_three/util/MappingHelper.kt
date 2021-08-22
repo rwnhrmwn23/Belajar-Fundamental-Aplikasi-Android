@@ -2,9 +2,9 @@ package com.onedev.dicoding.submission_three.util
 
 import android.database.Cursor
 import com.onedev.dicoding.submission_three.model.ItemUser
-import com.onedev.dicoding.submission_three.provider.UserProvider.Companion.USER_AVATAR_URL
-import com.onedev.dicoding.submission_three.provider.UserProvider.Companion.USER_ID
-import com.onedev.dicoding.submission_three.provider.UserProvider.Companion.USER_USERNAME
+import com.onedev.dicoding.submission_three.util.Support.USER_AVATAR_URL
+import com.onedev.dicoding.submission_three.util.Support.USER_ID
+import com.onedev.dicoding.submission_three.util.Support.USER_USERNAME
 
 object MappingHelper {
     fun mapCursorToArrayList(userCursor: Cursor?): ArrayList<ItemUser> {

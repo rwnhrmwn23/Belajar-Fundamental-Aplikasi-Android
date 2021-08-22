@@ -14,10 +14,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.adapter.FavoriteAdapter
 import com.onedev.dicoding.submission_three.databinding.FragmentFavoriteBinding
-import com.onedev.dicoding.submission_three.provider.UserProvider.Companion.CONTENT_URI
 import com.onedev.dicoding.submission_three.util.IFavorite
 import com.onedev.dicoding.submission_three.util.MappingHelper
 import com.onedev.dicoding.submission_three.util.Support
+import com.onedev.dicoding.submission_three.util.Support.CONTENT_URI
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
