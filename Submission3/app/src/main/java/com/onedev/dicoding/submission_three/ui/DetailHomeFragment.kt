@@ -1,34 +1,46 @@
 package com.onedev.dicoding.submission_three.ui
 
+import android.content.ContentValues
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.databinding.FragmentDetailHomeBinding
 import com.onedev.dicoding.submission_three.model.ItemUser
+import com.onedev.dicoding.submission_three.provider.UserProvider.Companion.CONTENT_URI
+import com.onedev.dicoding.submission_three.provider.UserProvider.Companion.USER_AVATAR_URL
+import com.onedev.dicoding.submission_three.provider.UserProvider.Companion.USER_ID
+import com.onedev.dicoding.submission_three.provider.UserProvider.Companion.USER_USERNAME
 import com.onedev.dicoding.submission_three.util.Constant
+import com.onedev.dicoding.submission_three.util.MappingHelper
 import com.onedev.dicoding.submission_three.util.PreferenceManager
 import com.onedev.dicoding.submission_three.util.Support
 import com.onedev.dicoding.submission_three.util.Support.loadImage
 import com.onedev.dicoding.submission_three.viewmodel.FavoriteViewModel
 import com.onedev.dicoding.submission_three.viewmodel.MainViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
 
 class DetailHomeFragment : Fragment(), View.OnClickListener {
 
     private var avatarUrl = ""
     private var username = ""
+    private var userId = 0
 
     private var _binding: FragmentDetailHomeBinding? = null
     private val binding get() = _binding
     private val args: DetailHomeFragmentArgs by navArgs()
     private var currentUser: ItemUser? = null
 
+    private lateinit var urlWithId: Uri
     private lateinit var viewModel: MainViewModel
     private lateinit var favoriteViewModel: FavoriteViewModel
     private lateinit var preferenceManager: PreferenceManager
@@ -97,34 +109,54 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
         })
 
         viewModel.userDetail.observe(viewLifecycleOwner, {
+            userId = it.id
             username = it.login
+            avatarUrl = it.avatar_url
+
             (activity as AppCompatActivity?)?.supportActionBar?.title = username
 
-            it?.avatar_url?.let { url ->
-                avatarUrl = url
-                binding?.imgAvatar?.loadImage(avatarUrl)
-            }
+            binding?.imgAvatar?.loadImage(avatarUrl)
             binding?.tvName?.text = it.name
             binding?.tvRepository?.text = getString(R.string.repository, Support.convertToDec(it.public_repos.toDouble()))
             binding?.tvFollowers?.text = Support.convertToDec(it.followers.toDouble())
             binding?.tvFollowing?.text = Support.convertToDec(it.following.toDouble())
             binding?.tvLocation?.text = it.location
             binding?.tvCompany?.text = it.company
-        })
 
-        args.username?.let {
-            favoriteViewModel.selectSpecificFavorite(it)
-            favoriteViewModel.itemUser.observe(viewLifecycleOwner, { itemUser ->
-                if (itemUser != null) {
-                    currentUser = itemUser
+
+            urlWithId = Uri.parse("$CONTENT_URI/$userId")
+
+            lifecycleScope.launch(Dispatchers.Main) {
+                val deferredUsername = async(Dispatchers.IO) {
+                    // CONTENT_URI = content://com.onedev.dicoding.submission_three/tb_favorite/id
+                    val cursor = activity?.contentResolver?.query(urlWithId, null, null, null, null)
+                    MappingHelper.mapCursorToObject(cursor)
+                }
+
+                currentUser = deferredUsername.await()
+                if (currentUser?.id != 0) {
                     binding?.fabDeleteFavorite?.visibility = View.VISIBLE
                     binding?.fabAddFavorite?.visibility = View.INVISIBLE
                 } else {
                     binding?.fabDeleteFavorite?.visibility = View.INVISIBLE
                     binding?.fabAddFavorite?.visibility = View.VISIBLE
                 }
-            })
-        }
+            }
+        })
+
+
+
+//            favoriteViewModel.selectSpecificFavorite(it)
+//            favoriteViewModel.itemUser.observe(viewLifecycleOwner, { itemUser ->
+//                if (itemUser != null) {
+//                    currentUser = itemUser
+//                    binding?.fabDeleteFavorite?.visibility = View.VISIBLE
+//                    binding?.fabAddFavorite?.visibility = View.INVISIBLE
+//                } else {
+//                    binding?.fabDeleteFavorite?.visibility = View.INVISIBLE
+//                    binding?.fabAddFavorite?.visibility = View.VISIBLE
+//                }
+//            })
     }
 
     override fun onDestroyView() {
@@ -149,8 +181,17 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 view?.findNavController()?.navigate(toFollowersFollowing)
             }
             binding?.fabAddFavorite -> {
-                val user = ItemUser(0, avatarUrl, username)
-                favoriteViewModel.addFavorite(user)
+                val values = ContentValues()
+                values.put(USER_ID, userId)
+                values.put(USER_USERNAME, username)
+                values.put(USER_AVATAR_URL, avatarUrl)
+
+                lifecycleScope.launch(Dispatchers.IO) {
+                    activity?.contentResolver?.insert(CONTENT_URI, values)
+                }
+
+//                val user = ItemUser(0, avatarUrl, username)
+//                favoriteViewModel.addFavorite(user)
 
                 view?.let {
                     Support.showSnackBar(it, getString(R.string.success_add_favorite))
@@ -161,8 +202,10 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
             }
             binding?.fabDeleteFavorite -> {
-                currentUser?.let {
-                    favoriteViewModel.deleteFavorite(it)
+                currentUser?.id.let {
+                    lifecycleScope.launch(Dispatchers.IO) {
+                        activity?.contentResolver?.delete(urlWithId, null, null)
+                    }
                 }
 
                 view?.let {

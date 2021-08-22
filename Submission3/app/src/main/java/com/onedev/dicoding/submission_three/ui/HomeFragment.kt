@@ -62,6 +62,7 @@ class HomeFragment : Fragment() {
 
     private fun showLoading(state: Boolean) {
         if (state) {
+            binding?.rvUser?.visibility = View.GONE
             binding?.llNotSearching?.visibility = View.GONE
             binding?.shimmerViewContainer?.startShimmer()
             binding?.shimmerViewContainer?.visibility = View.VISIBLE
@@ -110,8 +111,6 @@ class HomeFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        adapter.setListUser(null)
-        binding?.llNotSearching?.visibility = View.VISIBLE
         binding?.shimmerViewContainer?.startShimmer()
     }
 

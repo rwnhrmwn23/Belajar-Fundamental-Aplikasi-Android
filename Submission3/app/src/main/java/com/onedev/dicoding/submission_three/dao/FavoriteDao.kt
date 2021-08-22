@@ -1,6 +1,6 @@
 package com.onedev.dicoding.submission_three.dao
 
-import androidx.lifecycle.LiveData
+import android.database.Cursor
 import androidx.room.*
 import com.onedev.dicoding.submission_three.model.ItemUser
 
@@ -8,18 +8,18 @@ import com.onedev.dicoding.submission_three.model.ItemUser
 interface FavoriteDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun addFavorite(user: ItemUser)
+    fun addFavorite(user: ItemUser?): Long
 
     @Query("SELECT * FROM tb_favorite ORDER BY id ASC")
-    fun selectAllFavorite(): LiveData<List<ItemUser>>
+    fun selectAllFavorite(): Cursor
 
-    @Query("SELECT * FROM tb_favorite WHERE login = :username")
-    fun selectSpecificFavorite(username: String): ItemUser
+    @Query("SELECT * FROM tb_favorite WHERE id = :id")
+    fun selectSpecificFavorite(id: Int): Cursor
 
-    @Delete
-    suspend fun deleteFavorite(user: ItemUser)
+    @Query("DELETE FROM tb_favorite WHERE id = :id")
+    fun deleteFavorite(id: Int?) : Int
 
     @Query("DELETE FROM tb_favorite")
-    suspend fun deleteAllFavorite()
+    fun deleteAllFavorite() : Int
 
 }

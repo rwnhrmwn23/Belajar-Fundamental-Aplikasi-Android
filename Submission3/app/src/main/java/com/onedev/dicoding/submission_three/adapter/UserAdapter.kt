@@ -26,7 +26,7 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolderRecyclerview>() {
     inner class ViewHolderRecyclerview(private val binding: ListUserBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(items: ItemUser) {
             with(binding) {
-                imgAvatar.loadImage(items.avatar_url)
+                items.avatar_url?.let { imgAvatar.loadImage(it) }
                 tvUsername.text = items.login
                 itemView.setOnClickListener {
                     val toDetailUsers = HomeFragmentDirections.actionHomeFragmentToDetailHomeFragment()

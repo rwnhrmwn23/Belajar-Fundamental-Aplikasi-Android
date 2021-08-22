@@ -13,38 +13,38 @@ import kotlinx.coroutines.launch
 class FavoriteViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository: FavoriteRepository
-    val selectAllFavorite: LiveData<List<ItemUser>>
+//    val selectAllFavorite: LiveData<List<ItemUser>>
     val itemUser: LiveData<ItemUser>
 
     init {
         val favoriteDao = FavoriteDatabase.getDatabase(application).favoriteDao()
         repository = FavoriteRepository(favoriteDao)
-        selectAllFavorite = repository.selectAllFavorite
+//        selectAllFavorite = repository.selectAllFavorite
         itemUser = repository.itemUser
     }
 
-    fun selectSpecificFavorite(username: String) {
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.selectSpecificFavorite(username)
-        }
-    }
+//    fun selectSpecificFavorite(username: String) {
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.selectSpecificFavorite(username)
+//        }
+//    }
 
-    fun addFavorite(user: ItemUser) {
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.addFavorite(user)
-        }
-    }
-
-    fun deleteFavorite(user: ItemUser) {
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.deleteFavorite(user)
-        }
-    }
-
-    fun deleteAllFavorite() {
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.deleteAllFavorite()
-        }
-    }
+//    fun addFavorite(user: ItemUser) {
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.addFavorite(user)
+//        }
+//    }
+//
+//    fun deleteFavorite(user: ItemUser) {
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.deleteFavorite(user)
+//        }
+//    }
+//
+//    fun deleteAllFavorite() {
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.deleteAllFavorite()
+//        }
+//    }
 
 }

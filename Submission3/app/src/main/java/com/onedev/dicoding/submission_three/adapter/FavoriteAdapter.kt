@@ -26,10 +26,12 @@ class FavoriteAdapter(private val iFavorite: IFavorite) : RecyclerView.Adapter<F
     inner class ViewHolderRecyclerview(private val binding: ListUserFavoriteBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(items: ItemUser) {
             with(binding) {
-                imgAvatar.loadImage(items.avatar_url)
+                items.avatar_url?.let { imgAvatar.loadImage(it) }
                 tvUsername.text = items.login
                 imgDeleteFavorite.setOnClickListener {
-                    iFavorite.deleteFavorite(true, items.login)
+                    items.id.let { userId ->
+                        iFavorite.deleteFavorite(true, userId)
+                    }
                 }
                 itemView.setOnClickListener {
                     val toDetailUsers = FavoriteFragmentDirections.actionFavoriteFragmentToDetailHomeFragment()
