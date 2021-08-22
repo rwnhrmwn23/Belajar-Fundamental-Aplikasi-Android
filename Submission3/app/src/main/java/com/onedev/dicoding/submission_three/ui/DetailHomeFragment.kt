@@ -23,7 +23,6 @@ import com.onedev.dicoding.submission_three.util.MappingHelper
 import com.onedev.dicoding.submission_three.util.PreferenceManager
 import com.onedev.dicoding.submission_three.util.Support
 import com.onedev.dicoding.submission_three.util.Support.loadImage
-import com.onedev.dicoding.submission_three.viewmodel.FavoriteViewModel
 import com.onedev.dicoding.submission_three.viewmodel.MainViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -42,7 +41,6 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
     private lateinit var urlWithId: Uri
     private lateinit var viewModel: MainViewModel
-    private lateinit var favoriteViewModel: FavoriteViewModel
     private lateinit var preferenceManager: PreferenceManager
 
     override fun onCreateView(
@@ -59,7 +57,6 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
         setHasOptionsMenu(true)
 
         preferenceManager = PreferenceManager(requireContext())
-        favoriteViewModel = ViewModelProvider(this).get(FavoriteViewModel::class.java)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         binding?.llFollowers?.setOnClickListener(this)
@@ -79,9 +76,21 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
             val textToShare = getString(R.string.info_github_user) +
                     "\n${getString(R.string.username)} : $username" +
                     "\n${getString(R.string.name)} : ${binding?.tvName?.text}" +
-                    "\n${Support.replaceSymbol(getString(R.string.repository))} : ${Support.replaceRepo(binding?.tvRepository?.text.toString())}" +
-                    "\n${getString(R.string.followers)} : ${Support.convertToDec(binding?.tvFollowers?.text.toString().toDouble())}" +
-                    "\n${getString(R.string.following)} : ${Support.convertToDec(binding?.tvFollowing?.text.toString().toDouble())}" +
+                    "\n${Support.replaceSymbol(getString(R.string.repository))} : ${
+                        Support.replaceRepo(
+                            binding?.tvRepository?.text.toString()
+                        )
+                    }" +
+                    "\n${getString(R.string.followers)} : ${
+                        Support.convertToDec(
+                            binding?.tvFollowers?.text.toString().toDouble()
+                        )
+                    }" +
+                    "\n${getString(R.string.following)} : ${
+                        Support.convertToDec(
+                            binding?.tvFollowing?.text.toString().toDouble()
+                        )
+                    }" +
                     "\n${getString(R.string.location)} : ${binding?.tvLocation?.text}" +
                     "\n${getString(R.string.company_name)} : ${binding?.tvCompany?.text}"
             val intent = Intent()
@@ -117,7 +126,8 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
             binding?.imgAvatar?.loadImage(avatarUrl)
             binding?.tvName?.text = it.name
-            binding?.tvRepository?.text = getString(R.string.repository, Support.convertToDec(it.public_repos.toDouble()))
+            binding?.tvRepository?.text =
+                getString(R.string.repository, Support.convertToDec(it.public_repos.toDouble()))
             binding?.tvFollowers?.text = Support.convertToDec(it.followers.toDouble())
             binding?.tvFollowing?.text = Support.convertToDec(it.following.toDouble())
             binding?.tvLocation?.text = it.location
@@ -128,7 +138,6 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
 
             lifecycleScope.launch(Dispatchers.Main) {
                 val deferredUsername = async(Dispatchers.IO) {
-                    // CONTENT_URI = content://com.onedev.dicoding.submission_three/tb_favorite/id
                     val cursor = activity?.contentResolver?.query(urlWithId, null, null, null, null)
                     MappingHelper.mapCursorToObject(cursor)
                 }
@@ -143,20 +152,6 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 }
             }
         })
-
-
-
-//            favoriteViewModel.selectSpecificFavorite(it)
-//            favoriteViewModel.itemUser.observe(viewLifecycleOwner, { itemUser ->
-//                if (itemUser != null) {
-//                    currentUser = itemUser
-//                    binding?.fabDeleteFavorite?.visibility = View.VISIBLE
-//                    binding?.fabAddFavorite?.visibility = View.INVISIBLE
-//                } else {
-//                    binding?.fabDeleteFavorite?.visibility = View.INVISIBLE
-//                    binding?.fabAddFavorite?.visibility = View.VISIBLE
-//                }
-//            })
     }
 
     override fun onDestroyView() {
@@ -167,14 +162,16 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view) {
             binding?.llFollowers -> {
-                val toFollowersFollowing = DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
+                val toFollowersFollowing =
+                    DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
                 toFollowersFollowing.pageIndex = 0
                 toFollowersFollowing.username = username
                 preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username)
                 view?.findNavController()?.navigate(toFollowersFollowing)
             }
             binding?.llFollowing -> {
-                val toFollowersFollowing = DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
+                val toFollowersFollowing =
+                    DetailHomeFragmentDirections.actionDetailHomeFragmentToFollowersFollowingFragment()
                 toFollowersFollowing.pageIndex = 1
                 toFollowersFollowing.username = username
                 preferenceManager.putString(Constant.USERNAME, toFollowersFollowing.username)
@@ -189,9 +186,6 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 lifecycleScope.launch(Dispatchers.IO) {
                     activity?.contentResolver?.insert(CONTENT_URI, values)
                 }
-
-//                val user = ItemUser(0, avatarUrl, username)
-//                favoriteViewModel.addFavorite(user)
 
                 view?.let {
                     Support.showSnackBar(it, getString(R.string.success_add_favorite))

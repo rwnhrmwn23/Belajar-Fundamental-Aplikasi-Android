@@ -8,32 +8,25 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.HandlerThread
 import android.view.*
-import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.adapter.FavoriteAdapter
 import com.onedev.dicoding.submission_three.databinding.FragmentFavoriteBinding
-import com.onedev.dicoding.submission_three.provider.UserProvider
 import com.onedev.dicoding.submission_three.provider.UserProvider.Companion.CONTENT_URI
 import com.onedev.dicoding.submission_three.util.IFavorite
 import com.onedev.dicoding.submission_three.util.MappingHelper
 import com.onedev.dicoding.submission_three.util.Support
-import com.onedev.dicoding.submission_three.viewmodel.FavoriteViewModel
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 
 class FavoriteFragment : Fragment(), IFavorite {
 
-    private lateinit var viewModel: FavoriteViewModel
     private lateinit var adapter: FavoriteAdapter
     private var _binding: FragmentFavoriteBinding? = null
     private val binding get() = _binding
-    private lateinit var urlWithId: Uri
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,8 +39,6 @@ class FavoriteFragment : Fragment(), IFavorite {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setHasOptionsMenu(true)
-
-        viewModel = ViewModelProvider(this).get(FavoriteViewModel::class.java)
 
         adapter = FavoriteAdapter(this)
         binding?.rvFavorite?.layoutManager = LinearLayoutManager(requireContext())
@@ -65,26 +56,12 @@ class FavoriteFragment : Fragment(), IFavorite {
         activity?.contentResolver?.registerContentObserver(CONTENT_URI, true, myObserver)
 
         loadFavoriteAsync()
-
-//        viewModel.selectAllFavorite.observe(viewLifecycleOwner, {
-//            if (it.isNotEmpty()) {
-//                adapter.setListUser(it as ArrayList<ItemUser>)
-//                binding?.rvFavorite?.visibility = View.VISIBLE
-//                binding?.llNoDataAvailable?.visibility = View.GONE
-//            } else {
-//                setHasOptionsMenu(false)
-//                binding?.rvFavorite?.visibility = View.GONE
-//                binding?.llNoDataAvailable?.visibility = View.VISIBLE
-//            }
-//            showLoading(false)
-//        })
     }
 
     private fun loadFavoriteAsync() {
         lifecycleScope.launch(Dispatchers.Main) {
             showLoading(true)
             val deferredFavorite = async(Dispatchers.IO) {
-                // CONTENT_URI = content://com.onedev.dicoding.submission_three/favorite_database
                 val cursor = activity?.contentResolver?.query(CONTENT_URI, null, null, null, null)
                 MappingHelper.mapCursorToArrayList(cursor)
             }

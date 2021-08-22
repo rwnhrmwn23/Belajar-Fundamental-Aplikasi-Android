@@ -34,10 +34,7 @@ class UserProvider : ContentProvider() {
         private val sUriMatcher = UriMatcher(UriMatcher.NO_MATCH)
 
         init {
-            // content://com.onedev.dicoding.submission_three/tb_favorite
             sUriMatcher.addURI(AUTHORITY, TABLE_NAME, FAVORITE)
-
-            // content://com.onedev.dicoding.submission_three/tb_favorite/username
             sUriMatcher.addURI(AUTHORITY, "$TABLE_NAME/#", FAVORITE_USER_ID)
         }
     }
