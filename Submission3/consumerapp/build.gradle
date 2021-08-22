@@ -20,7 +20,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField "String", "KEY", '"token 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"'
+        buildConfigField "String", "KEY", '"token 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"'
     }
 
     buildTypes {
