@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tanipro.mynotesapp">
+    package="com.onedev.dicoding.mynotesapp">
+
+    <permission android:name="com.onedev.dicoding.mynotesapp.READ_DATABASE" android:protectionLevel="normal"/>
+    <permission android:name="com.onedev.dicoding.mynotesapp.WRITE_DATABASE" android:protectionLevel="normal"/>
 
     <application
         android:allowBackup="true"
@@ -9,11 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyNotesApp">
+        <provider
+            android:name=".provider.NoteProvider"
+            android:authorities="com.onedev.dicoding.mynotesapp"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.onedev.dicoding.mynotesapp.READ_DATABASE"
+            android:writePermission="com.onedev.dicoding.mynotesapp.WRITE_DATABASE"/>
+
         <activity
-            android:name=".NoteAddUpdateActivity"
+            android:name=".activity.NoteAddUpdateActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
