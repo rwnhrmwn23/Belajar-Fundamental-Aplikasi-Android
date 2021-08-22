@@ -23,4 +23,17 @@
     <string name="change_language">Ubah Bahasa</string>
     <string name="save">Simpan</string>
     <string name="info_github_user">Info User Github</string>
+    <string name="detail_user">Detail Pengguna</string>
+    <string name="button_to_add_favorite">Tombol untuk Menambah Favorit</string>
+    <string name="button_to_delete_favorite">Tombol untuk Menghapus Favorit</string>
+    <string name="success_add_favorite">Berhasil Menambahkan ke Favorit</string>
+    <string name="success_delete_favorite">Berhasil Menghapus dari Favorit</string>
+    <string name="success_delete_all_favorite">Berhasil Menghapus Semua Favorit</string>
+    <string name="favorite_not_found">Belum ada pengguna favorit di dalam list</string>
+    <string name="favorite">Favorit</string>
+    <string name="delete">Hapus</string>
+    <string name="yes">Iya</string>
+    <string name="no">Tidak</string>
+    <string name="delete_all_favorite">Hapus Semua Favorit</string>
+    <string name="confirmation_delete_all_favorite">Apa kamu yakin menghapus semua daftar favorit?</string>
 </resources>
