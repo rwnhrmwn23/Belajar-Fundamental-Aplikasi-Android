@@ -6,11 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.databinding.FragmentChangeLanguageBinding
-import com.onedev.dicoding.submission_three.util.LocaleHelper
-import com.onedev.dicoding.submission_three.util.Support
+import com.onedev.dicoding.submission_three.helper.LocaleHelper
 
 class ChangeLanguageFragment : Fragment(), View.OnClickListener {
     private var _binding: FragmentChangeLanguageBinding? = null

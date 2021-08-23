@@ -1,8 +1,7 @@
-package com.onedev.consumerapp.util
+package com.onedev.dicoding.submission_three.locale
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.onedev.consumerapp.util.Constant
 
 class PreferenceManager(context: Context) {
 
@@ -16,5 +15,15 @@ class PreferenceManager(context: Context) {
 
     fun getString(key: String): String? {
         return sharedPreferences.getString(key, null)
+    }
+
+    fun putBoolean(key: String, value: Boolean) {
+        val editor: SharedPreferences.Editor = sharedPreferences.edit()
+        editor.putBoolean(key, value)
+        editor.apply()
+    }
+
+    fun getBoolean(key: String): Boolean {
+        return sharedPreferences.getBoolean(key, false)
     }
 }

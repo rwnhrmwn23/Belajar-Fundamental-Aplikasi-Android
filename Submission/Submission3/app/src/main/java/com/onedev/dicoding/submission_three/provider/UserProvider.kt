@@ -1,6 +1,5 @@
 package com.onedev.dicoding.submission_three.provider
 
-import android.annotation.SuppressLint
 import android.content.ContentProvider
 import android.content.ContentValues
 import android.content.Context
@@ -9,11 +8,10 @@ import android.database.Cursor
 import android.net.Uri
 import com.onedev.dicoding.submission_three.dao.FavoriteDao
 import com.onedev.dicoding.submission_three.database.FavoriteDatabase
-import com.onedev.dicoding.submission_three.util.Support.AUTHORITY
-import com.onedev.dicoding.submission_three.util.Support.CONTENT_URI
-import com.onedev.dicoding.submission_three.util.Support.TABLE_NAME
-import com.onedev.dicoding.submission_three.util.Support.toItemUser
-import com.onedev.dicoding.submission_three.widget.FavoriteStackWidget
+import com.onedev.dicoding.submission_three.helper.SupportHelper.AUTHORITY
+import com.onedev.dicoding.submission_three.helper.SupportHelper.CONTENT_URI
+import com.onedev.dicoding.submission_three.helper.SupportHelper.TABLE_NAME
+import com.onedev.dicoding.submission_three.helper.SupportHelper.toItemUser
 
 class UserProvider : ContentProvider() {
 

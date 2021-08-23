@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.onedev.consumerapp.databinding.ListUserBinding
 import com.onedev.consumerapp.model.ItemUser
 import com.onedev.consumerapp.ui.HomeFragmentDirections
-import com.onedev.consumerapp.util.Support.loadImage
+import com.onedev.consumerapp.helper.SupportHelper.loadImage
 
 class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolderRecyclerview>() {
 

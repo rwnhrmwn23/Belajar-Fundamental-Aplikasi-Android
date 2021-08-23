@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.onedev.consumerapp.databinding.ListUserFavoriteBinding
 import com.onedev.consumerapp.model.ItemUser
 import com.onedev.consumerapp.ui.FavoriteFragmentDirections
-import com.onedev.consumerapp.util.IFavorite
-import com.onedev.consumerapp.util.Support.loadImage
+import com.onedev.consumerapp.interfaces.IFavorite
+import com.onedev.consumerapp.helper.SupportHelper.loadImage
 
 class FavoriteAdapter(private val iFavorite: IFavorite) : RecyclerView.Adapter<FavoriteAdapter.ViewHolderRecyclerview>() {
 

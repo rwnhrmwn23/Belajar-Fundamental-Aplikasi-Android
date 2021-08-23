@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.onedev.dicoding.submission_three.databinding.ListUserBinding
 import com.onedev.dicoding.submission_three.model.ItemUser
 import com.onedev.dicoding.submission_three.ui.HomeFragmentDirections
-import com.onedev.dicoding.submission_three.util.Support.loadImage
+import com.onedev.dicoding.submission_three.helper.SupportHelper.loadImage
 
 class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolderRecyclerview>() {
 

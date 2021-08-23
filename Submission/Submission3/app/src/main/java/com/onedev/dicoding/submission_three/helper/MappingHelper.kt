@@ -1,10 +1,10 @@
-package com.onedev.consumerapp.util
+package com.onedev.dicoding.submission_three.helper
 
 import android.database.Cursor
-import com.onedev.consumerapp.model.ItemUser
-import com.onedev.consumerapp.util.Support.USER_AVATAR_URL
-import com.onedev.consumerapp.util.Support.USER_ID
-import com.onedev.consumerapp.util.Support.USER_USERNAME
+import com.onedev.dicoding.submission_three.model.ItemUser
+import com.onedev.dicoding.submission_three.helper.SupportHelper.USER_AVATAR_URL
+import com.onedev.dicoding.submission_three.helper.SupportHelper.USER_ID
+import com.onedev.dicoding.submission_three.helper.SupportHelper.USER_USERNAME
 
 object MappingHelper {
     fun mapCursorToArrayList(userCursor: Cursor?): ArrayList<ItemUser> {

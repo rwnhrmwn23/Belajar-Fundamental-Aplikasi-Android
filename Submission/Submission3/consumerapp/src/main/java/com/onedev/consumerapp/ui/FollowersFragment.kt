@@ -9,8 +9,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.consumerapp.adapter.FollowersFollowingAdapter
 import com.onedev.consumerapp.databinding.FragmentFollowersBinding
-import com.onedev.consumerapp.util.Constant
-import com.onedev.consumerapp.util.PreferenceManager
+import com.onedev.consumerapp.locale.Constant
+import com.onedev.consumerapp.locale.PreferenceManager
 import com.onedev.consumerapp.viewmodel.MainViewModel
 
 class FollowersFragment : Fragment() {

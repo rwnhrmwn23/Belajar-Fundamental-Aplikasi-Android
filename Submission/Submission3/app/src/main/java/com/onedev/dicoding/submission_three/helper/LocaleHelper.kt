@@ -1,4 +1,4 @@
-package com.onedev.dicoding.submission_three.util
+package com.onedev.dicoding.submission_three.helper
 
 import android.content.Context
 import androidx.preference.PreferenceManager

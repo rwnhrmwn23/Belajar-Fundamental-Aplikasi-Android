@@ -14,12 +14,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.adapter.FavoriteAdapter
 import com.onedev.dicoding.submission_three.databinding.FragmentFavoriteBinding
-import com.onedev.dicoding.submission_three.util.IFavorite
-import com.onedev.dicoding.submission_three.util.MappingHelper
-import com.onedev.dicoding.submission_three.util.Support
-import com.onedev.dicoding.submission_three.util.Support.CONTENT_URI
-import com.onedev.dicoding.submission_three.util.Support.refreshWidget
-import com.onedev.dicoding.submission_three.widget.FavoriteStackWidget
+import com.onedev.dicoding.submission_three.interfaces.IFavorite
+import com.onedev.dicoding.submission_three.helper.MappingHelper
+import com.onedev.dicoding.submission_three.helper.SupportHelper
+import com.onedev.dicoding.submission_three.helper.SupportHelper.CONTENT_URI
+import com.onedev.dicoding.submission_three.helper.SupportHelper.refreshWidget
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
@@ -103,7 +102,7 @@ class FavoriteFragment : Fragment(), IFavorite {
                     activity?.contentResolver?.delete(CONTENT_URI, null, null)
                 }
                 refreshWidget(requireContext())
-                Support.showSnackBar(requireView(), getString(R.string.success_delete_all_favorite))
+                SupportHelper.showSnackBar(requireView(), getString(R.string.success_delete_all_favorite))
             }
             .setNegativeButton(getString(R.string.no)) { _, _ -> }
             .setTitle(getString(R.string.delete_all_favorite))
@@ -129,7 +128,7 @@ class FavoriteFragment : Fragment(), IFavorite {
                 activity?.contentResolver?.delete(urlWithId, null, null)
             }
             refreshWidget(requireContext())
-            Support.showSnackBar(requireView(), getString(R.string.success_delete_favorite))
+            SupportHelper.showSnackBar(requireView(), getString(R.string.success_delete_favorite))
         }
     }
 }

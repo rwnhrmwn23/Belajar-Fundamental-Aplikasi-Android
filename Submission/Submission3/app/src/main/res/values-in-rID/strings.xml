@@ -38,4 +38,9 @@
     <string name="confirmation_delete_all_favorite">Apa kamu yakin menghapus semua daftar favorit?</string>
     <string name="favorite_widget">Widget Favorit</string>
     <string name="favorite_empty">Favorit Tidak Ditemukan</string>
+    <string name="app_widget_description">Widget untuk menampilkan list favorit user github</string>
+    <string name="reminder">Pengingat</string>
+    <string name="message_reminder">Ayo cari pengguna hebat di Github</string>
+    <string name="success_add_reminder">Pengingat Berhasil Ditambahkan</string>
+    <string name="success_delete_reminder">Pengingat Berhasil Dihapus</string>
 </resources>

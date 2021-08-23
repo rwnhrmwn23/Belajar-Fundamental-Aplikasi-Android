@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.onedev.consumerapp.R
 import com.onedev.consumerapp.databinding.FragmentSettingBinding
-import com.onedev.consumerapp.util.LocaleHelper
+import com.onedev.consumerapp.helper.LocaleHelper
 
 class SettingFragment : Fragment(), View.OnClickListener {
 

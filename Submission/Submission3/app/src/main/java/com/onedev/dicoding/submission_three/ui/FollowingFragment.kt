@@ -9,8 +9,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.dicoding.submission_three.adapter.FollowersFollowingAdapter
 import com.onedev.dicoding.submission_three.databinding.FragmentFollowingBinding
-import com.onedev.dicoding.submission_three.util.Constant
-import com.onedev.dicoding.submission_three.util.PreferenceManager
+import com.onedev.dicoding.submission_three.locale.Constant
+import com.onedev.dicoding.submission_three.locale.PreferenceManager
 import com.onedev.dicoding.submission_three.viewmodel.MainViewModel
 
 class FollowingFragment : Fragment() {

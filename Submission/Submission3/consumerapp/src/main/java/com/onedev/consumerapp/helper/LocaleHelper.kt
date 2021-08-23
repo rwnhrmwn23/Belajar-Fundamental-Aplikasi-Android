@@ -1,4 +1,4 @@
-package com.onedev.consumerapp.util
+package com.onedev.consumerapp.helper
 
 import android.content.Context
 import androidx.preference.PreferenceManager

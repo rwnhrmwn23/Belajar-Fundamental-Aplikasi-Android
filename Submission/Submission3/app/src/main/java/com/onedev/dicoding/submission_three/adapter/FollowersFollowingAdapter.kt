@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.onedev.dicoding.submission_three.databinding.ListUserBinding
 import com.onedev.dicoding.submission_three.model.ItemFollowersAndFollowingItem
 import com.onedev.dicoding.submission_three.ui.FollowersFollowingFragmentDirections
-import com.onedev.dicoding.submission_three.util.Support.loadImage
+import com.onedev.dicoding.submission_three.helper.SupportHelper.loadImage
 
 class FollowersFollowingAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

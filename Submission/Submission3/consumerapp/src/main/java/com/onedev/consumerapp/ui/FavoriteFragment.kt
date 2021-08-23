@@ -14,10 +14,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.consumerapp.R
 import com.onedev.consumerapp.adapter.FavoriteAdapter
 import com.onedev.consumerapp.databinding.FragmentFavoriteBinding
-import com.onedev.consumerapp.util.IFavorite
-import com.onedev.consumerapp.util.MappingHelper
-import com.onedev.consumerapp.util.Support
-import com.onedev.consumerapp.util.Support.CONTENT_URI
+import com.onedev.consumerapp.interfaces.IFavorite
+import com.onedev.consumerapp.helper.MappingHelper
+import com.onedev.consumerapp.helper.SupportHelper
+import com.onedev.consumerapp.helper.SupportHelper.CONTENT_URI
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
@@ -100,7 +100,7 @@ class FavoriteFragment : Fragment(), IFavorite {
                 lifecycleScope.launch(Dispatchers.IO) {
                     activity?.contentResolver?.delete(CONTENT_URI, null, null)
                 }
-                Support.showSnackBar(requireView(), getString(R.string.success_delete_all_favorite))
+                SupportHelper.showSnackBar(requireView(), getString(R.string.success_delete_all_favorite))
             }
             .setNegativeButton(getString(R.string.no)) { _, _ -> }
             .setTitle(getString(R.string.delete_all_favorite))
@@ -125,7 +125,7 @@ class FavoriteFragment : Fragment(), IFavorite {
             lifecycleScope.launch(Dispatchers.IO) {
                 activity?.contentResolver?.delete(urlWithId, null, null)
             }
-            Support.showSnackBar(requireView(), getString(R.string.success_delete_favorite))
+            SupportHelper.showSnackBar(requireView(), getString(R.string.success_delete_favorite))
         }
     }
 }

@@ -8,9 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.onedev.dicoding.submission_three.databinding.ListUserFavoriteBinding
 import com.onedev.dicoding.submission_three.model.ItemUser
 import com.onedev.dicoding.submission_three.ui.FavoriteFragmentDirections
-import com.onedev.dicoding.submission_three.ui.HomeFragmentDirections
-import com.onedev.dicoding.submission_three.util.IFavorite
-import com.onedev.dicoding.submission_three.util.Support.loadImage
+import com.onedev.dicoding.submission_three.interfaces.IFavorite
+import com.onedev.dicoding.submission_three.helper.SupportHelper.loadImage
 
 class FavoriteAdapter(private val iFavorite: IFavorite) : RecyclerView.Adapter<FavoriteAdapter.ViewHolderRecyclerview>() {
 

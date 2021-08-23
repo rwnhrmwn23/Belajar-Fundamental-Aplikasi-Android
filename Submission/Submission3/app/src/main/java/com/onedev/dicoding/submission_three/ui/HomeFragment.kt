@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.adapter.UserAdapter
 import com.onedev.dicoding.submission_three.databinding.FragmentHomeBinding
-import com.onedev.dicoding.submission_three.util.Support
+import com.onedev.dicoding.submission_three.helper.SupportHelper
 import com.onedev.dicoding.submission_three.viewmodel.MainViewModel
 
 class HomeFragment : Fragment() {
@@ -34,7 +34,7 @@ class HomeFragment : Fragment() {
     @SuppressLint("NotifyDataSetChanged")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Support.showActionBar(requireActivity())
+        SupportHelper.showActionBar(requireActivity())
 
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 

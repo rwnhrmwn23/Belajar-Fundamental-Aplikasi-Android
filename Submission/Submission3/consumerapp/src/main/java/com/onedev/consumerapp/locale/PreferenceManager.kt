@@ -1,4 +1,4 @@
-package com.onedev.dicoding.submission_three.util
+package com.onedev.consumerapp.locale
 
 import android.content.Context
 import android.content.SharedPreferences

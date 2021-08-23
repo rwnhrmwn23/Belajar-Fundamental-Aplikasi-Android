@@ -31,6 +31,8 @@
                 android:resource="@xml/favorite_stack_widget_info" />
         </receiver>
 
+        <receiver android:name=".service.AlarmReceiver" />
+
         <service
             android:name=".widget.StackWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />

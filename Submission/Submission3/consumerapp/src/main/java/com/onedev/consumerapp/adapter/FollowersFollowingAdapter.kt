@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.onedev.consumerapp.databinding.ListUserBinding
 import com.onedev.consumerapp.model.ItemFollowersAndFollowingItem
 import com.onedev.consumerapp.ui.FollowersFollowingFragmentDirections
-import com.onedev.consumerapp.util.Support.loadImage
+import com.onedev.consumerapp.helper.SupportHelper.loadImage
 
 class FollowersFollowingAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

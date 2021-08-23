@@ -14,15 +14,15 @@ import androidx.navigation.fragment.navArgs
 import com.onedev.consumerapp.R
 import com.onedev.consumerapp.databinding.FragmentDetailHomeBinding
 import com.onedev.consumerapp.model.ItemUser
-import com.onedev.consumerapp.util.Constant
-import com.onedev.consumerapp.util.MappingHelper
-import com.onedev.consumerapp.util.PreferenceManager
-import com.onedev.consumerapp.util.Support
-import com.onedev.consumerapp.util.Support.CONTENT_URI
-import com.onedev.consumerapp.util.Support.USER_AVATAR_URL
-import com.onedev.consumerapp.util.Support.USER_ID
-import com.onedev.consumerapp.util.Support.USER_USERNAME
-import com.onedev.consumerapp.util.Support.loadImage
+import com.onedev.consumerapp.locale.Constant
+import com.onedev.consumerapp.helper.MappingHelper
+import com.onedev.consumerapp.locale.PreferenceManager
+import com.onedev.consumerapp.helper.SupportHelper
+import com.onedev.consumerapp.helper.SupportHelper.CONTENT_URI
+import com.onedev.consumerapp.helper.SupportHelper.USER_AVATAR_URL
+import com.onedev.consumerapp.helper.SupportHelper.USER_ID
+import com.onedev.consumerapp.helper.SupportHelper.USER_USERNAME
+import com.onedev.consumerapp.helper.SupportHelper.loadImage
 import com.onedev.consumerapp.viewmodel.MainViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -76,18 +76,18 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
             val textToShare = getString(R.string.info_github_user) +
                     "\n${getString(R.string.username)} : $username" +
                     "\n${getString(R.string.name)} : ${binding?.tvName?.text}" +
-                    "\n${Support.replaceSymbol(getString(R.string.repository))} : ${
-                        Support.replaceRepo(
+                    "\n${SupportHelper.replaceSymbol(getString(R.string.repository))} : ${
+                        SupportHelper.replaceRepo(
                             binding?.tvRepository?.text.toString()
                         )
                     }" +
                     "\n${getString(R.string.followers)} : ${
-                        Support.convertToDec(
+                        SupportHelper.convertToDec(
                             binding?.tvFollowers?.text.toString().toDouble()
                         )
                     }" +
                     "\n${getString(R.string.following)} : ${
-                        Support.convertToDec(
+                        SupportHelper.convertToDec(
                             binding?.tvFollowing?.text.toString().toDouble()
                         )
                     }" +
@@ -127,9 +127,9 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
             binding?.imgAvatar?.loadImage(avatarUrl)
             binding?.tvName?.text = it.name
             binding?.tvRepository?.text =
-                getString(R.string.repository, Support.convertToDec(it.public_repos.toDouble()))
-            binding?.tvFollowers?.text = Support.convertToDec(it.followers.toDouble())
-            binding?.tvFollowing?.text = Support.convertToDec(it.following.toDouble())
+                getString(R.string.repository, SupportHelper.convertToDec(it.public_repos.toDouble()))
+            binding?.tvFollowers?.text = SupportHelper.convertToDec(it.followers.toDouble())
+            binding?.tvFollowing?.text = SupportHelper.convertToDec(it.following.toDouble())
             binding?.tvLocation?.text = it.location
             binding?.tvCompany?.text = it.company
 
@@ -188,7 +188,7 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 }
 
                 view?.let {
-                    Support.showSnackBar(it, getString(R.string.success_add_favorite))
+                    SupportHelper.showSnackBar(it, getString(R.string.success_add_favorite))
                 }
 
                 binding?.fabAddFavorite?.visibility = View.INVISIBLE
@@ -203,7 +203,7 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 }
 
                 view?.let {
-                    Support.showSnackBar(it, getString(R.string.success_delete_favorite))
+                    SupportHelper.showSnackBar(it, getString(R.string.success_delete_favorite))
                 }
 
                 binding?.fabAddFavorite?.visibility = View.VISIBLE

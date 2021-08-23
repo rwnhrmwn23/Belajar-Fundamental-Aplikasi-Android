@@ -40,4 +40,8 @@
     <string name="favorite_widget">Favorite Widget</string>
     <string name="favorite_empty">Favorite Not Found</string>
     <string name="app_widget_description">Widget for show list favorite user github</string>
+    <string name="reminder">Reminder</string>
+    <string name="message_reminder">Let\'s find great user in GitHub!</string>
+    <string name="success_add_reminder">Success Add Reminder</string>
+    <string name="success_delete_reminder">Success Nonactive Reminder</string>
 </resources>

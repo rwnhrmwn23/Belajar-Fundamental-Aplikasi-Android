@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.onedev.consumerapp.R
 import com.onedev.consumerapp.databinding.FragmentSplashBinding
-import com.onedev.consumerapp.util.Support
+import com.onedev.consumerapp.helper.SupportHelper
 
 class SplashFragment : Fragment() {
     private var _binding: FragmentSplashBinding? = null
@@ -26,7 +26,7 @@ class SplashFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Support.hideActionBar(requireActivity())
+        SupportHelper.hideActionBar(requireActivity())
 
         Looper.myLooper()?.let {
             Handler(it).postDelayed({

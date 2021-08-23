@@ -1,4 +1,4 @@
-package com.onedev.consumerapp.util
+package com.onedev.consumerapp.helper
 
 import android.app.Activity
 import android.content.ContentValues
@@ -12,7 +12,7 @@ import com.onedev.consumerapp.R
 import com.onedev.consumerapp.model.ItemUser
 import java.text.DecimalFormat
 
-object Support {
+object SupportHelper {
 
     const val USER_ID = "id"
     const val USER_USERNAME = "login"

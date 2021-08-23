@@ -6,11 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.navArgs
 import com.onedev.dicoding.submission_three.adapter.TabFollowerAndFollowingAdapter
 import com.onedev.dicoding.submission_three.databinding.FragmentFollowersFollowingBinding
-import com.onedev.dicoding.submission_three.util.Support
 
 class FollowersFollowingFragment : Fragment() {
     private var _binding: FragmentFollowersFollowingBinding? = null

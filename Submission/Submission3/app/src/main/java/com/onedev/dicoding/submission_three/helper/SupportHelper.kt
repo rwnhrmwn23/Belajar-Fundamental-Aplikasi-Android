@@ -1,4 +1,4 @@
-package com.onedev.dicoding.submission_three.util
+package com.onedev.dicoding.submission_three.helper
 
 import android.app.Activity
 import android.content.ContentValues
@@ -18,11 +18,16 @@ import com.bumptech.glide.request.transition.Transition
 import com.google.android.material.snackbar.Snackbar
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.model.ItemUser
-import com.onedev.dicoding.submission_three.provider.UserProvider
 import com.onedev.dicoding.submission_three.widget.FavoriteStackWidget
 import java.text.DecimalFormat
 
-object Support {
+object SupportHelper {
+    const val ALARM_ID_REPEATING = 100
+    const val ALARM_CHANNEL_ID = "channel_reminder"
+    const val ALARM_CHANNEL_NAME = "Reminder Channel"
+    const val ALARM_TITTLE = "alarm_tittle"
+    const val ALARM_MESSAGE = "alarm_message"
+
     const val USER_ID = "id"
     const val USER_USERNAME = "login"
     const val USER_AVATAR_URL = "avatar_url"

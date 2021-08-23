@@ -7,8 +7,8 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.databinding.ActivityMainBinding
-import com.onedev.dicoding.submission_three.util.LocaleHelper.getPersistedLanguage
-import com.onedev.dicoding.submission_three.util.LocaleHelper.setLocale
+import com.onedev.dicoding.submission_three.helper.LocaleHelper.getPersistedLanguage
+import com.onedev.dicoding.submission_three.helper.LocaleHelper.setLocale
 
 class MainActivity : AppCompatActivity() {
 

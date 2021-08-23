@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.onedev.consumerapp.R
 import com.onedev.consumerapp.databinding.FragmentChangeLanguageBinding
-import com.onedev.consumerapp.util.LocaleHelper
+import com.onedev.consumerapp.helper.LocaleHelper
 
 class ChangeLanguageFragment : Fragment(), View.OnClickListener {
     private var _binding: FragmentChangeLanguageBinding? = null

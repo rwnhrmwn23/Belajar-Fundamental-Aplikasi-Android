@@ -1,17 +1,15 @@
 package com.onedev.dicoding.submission_three.widget
 
 import android.content.Context
-import android.content.Intent
 import android.database.Cursor
 import android.os.Binder
 import android.widget.RemoteViews
 import android.widget.RemoteViewsService
-import androidx.core.os.bundleOf
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.model.ItemUser
-import com.onedev.dicoding.submission_three.util.MappingHelper
-import com.onedev.dicoding.submission_three.util.Support
-import com.onedev.dicoding.submission_three.util.Support.toBitmap
+import com.onedev.dicoding.submission_three.helper.MappingHelper
+import com.onedev.dicoding.submission_three.helper.SupportHelper
+import com.onedev.dicoding.submission_three.helper.SupportHelper.toBitmap
 
 internal class StackRemoteViewsFactory(private val context: Context): RemoteViewsService.RemoteViewsFactory {
 
@@ -23,7 +21,7 @@ internal class StackRemoteViewsFactory(private val context: Context): RemoteView
 
         val identityToken = Binder.clearCallingIdentity()
 
-        cursor = context.contentResolver?.query(Support.CONTENT_URI, null, null, null, null)
+        cursor = context.contentResolver?.query(SupportHelper.CONTENT_URI, null, null, null, null)
         val listFavorite = MappingHelper.mapCursorToArrayList(cursor)
         mWidgetItems.clear()
         mWidgetItems.addAll(listFavorite)

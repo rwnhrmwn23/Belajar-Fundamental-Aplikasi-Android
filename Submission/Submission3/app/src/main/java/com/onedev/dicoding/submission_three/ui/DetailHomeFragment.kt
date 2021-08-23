@@ -14,18 +14,17 @@ import androidx.navigation.fragment.navArgs
 import com.onedev.dicoding.submission_three.R
 import com.onedev.dicoding.submission_three.databinding.FragmentDetailHomeBinding
 import com.onedev.dicoding.submission_three.model.ItemUser
-import com.onedev.dicoding.submission_three.util.Constant
-import com.onedev.dicoding.submission_three.util.MappingHelper
-import com.onedev.dicoding.submission_three.util.PreferenceManager
-import com.onedev.dicoding.submission_three.util.Support
-import com.onedev.dicoding.submission_three.util.Support.CONTENT_URI
-import com.onedev.dicoding.submission_three.util.Support.USER_AVATAR_URL
-import com.onedev.dicoding.submission_three.util.Support.USER_ID
-import com.onedev.dicoding.submission_three.util.Support.USER_USERNAME
-import com.onedev.dicoding.submission_three.util.Support.loadImage
-import com.onedev.dicoding.submission_three.util.Support.refreshWidget
+import com.onedev.dicoding.submission_three.locale.Constant
+import com.onedev.dicoding.submission_three.helper.MappingHelper
+import com.onedev.dicoding.submission_three.locale.PreferenceManager
+import com.onedev.dicoding.submission_three.helper.SupportHelper
+import com.onedev.dicoding.submission_three.helper.SupportHelper.CONTENT_URI
+import com.onedev.dicoding.submission_three.helper.SupportHelper.USER_AVATAR_URL
+import com.onedev.dicoding.submission_three.helper.SupportHelper.USER_ID
+import com.onedev.dicoding.submission_three.helper.SupportHelper.USER_USERNAME
+import com.onedev.dicoding.submission_three.helper.SupportHelper.loadImage
+import com.onedev.dicoding.submission_three.helper.SupportHelper.refreshWidget
 import com.onedev.dicoding.submission_three.viewmodel.MainViewModel
-import com.onedev.dicoding.submission_three.widget.FavoriteStackWidget
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
@@ -78,18 +77,18 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
             val textToShare = getString(R.string.info_github_user) +
                     "\n${getString(R.string.username)} : $username" +
                     "\n${getString(R.string.name)} : ${binding?.tvName?.text}" +
-                    "\n${Support.replaceSymbol(getString(R.string.repository))} : ${
-                        Support.replaceRepo(
+                    "\n${SupportHelper.replaceSymbol(getString(R.string.repository))} : ${
+                        SupportHelper.replaceRepo(
                             binding?.tvRepository?.text.toString()
                         )
                     }" +
                     "\n${getString(R.string.followers)} : ${
-                        Support.convertToDec(
+                        SupportHelper.convertToDec(
                             binding?.tvFollowers?.text.toString().toDouble()
                         )
                     }" +
                     "\n${getString(R.string.following)} : ${
-                        Support.convertToDec(
+                        SupportHelper.convertToDec(
                             binding?.tvFollowing?.text.toString().toDouble()
                         )
                     }" +
@@ -129,9 +128,9 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
             binding?.imgAvatar?.loadImage(avatarUrl)
             binding?.tvName?.text = it.name
             binding?.tvRepository?.text =
-                getString(R.string.repository, Support.convertToDec(it.public_repos.toDouble()))
-            binding?.tvFollowers?.text = Support.convertToDec(it.followers.toDouble())
-            binding?.tvFollowing?.text = Support.convertToDec(it.following.toDouble())
+                getString(R.string.repository, SupportHelper.convertToDec(it.public_repos.toDouble()))
+            binding?.tvFollowers?.text = SupportHelper.convertToDec(it.followers.toDouble())
+            binding?.tvFollowing?.text = SupportHelper.convertToDec(it.following.toDouble())
             binding?.tvLocation?.text = it.location
             binding?.tvCompany?.text = it.company
 
@@ -191,7 +190,7 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 refreshWidget(requireContext())
 
                 view?.let {
-                    Support.showSnackBar(it, getString(R.string.success_add_favorite))
+                    SupportHelper.showSnackBar(it, getString(R.string.success_add_favorite))
                 }
 
                 binding?.fabAddFavorite?.visibility = View.INVISIBLE
@@ -207,7 +206,7 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 refreshWidget(requireContext())
 
                 view?.let {
-                    Support.showSnackBar(it, getString(R.string.success_delete_favorite))
+                    SupportHelper.showSnackBar(it, getString(R.string.success_delete_favorite))
                 }
 
                 binding?.fabAddFavorite?.visibility = View.VISIBLE
