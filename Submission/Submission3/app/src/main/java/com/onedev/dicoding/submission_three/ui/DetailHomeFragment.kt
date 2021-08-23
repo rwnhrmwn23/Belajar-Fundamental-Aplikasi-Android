@@ -23,7 +23,9 @@ import com.onedev.dicoding.submission_three.util.Support.USER_AVATAR_URL
 import com.onedev.dicoding.submission_three.util.Support.USER_ID
 import com.onedev.dicoding.submission_three.util.Support.USER_USERNAME
 import com.onedev.dicoding.submission_three.util.Support.loadImage
+import com.onedev.dicoding.submission_three.util.Support.refreshWidget
 import com.onedev.dicoding.submission_three.viewmodel.MainViewModel
+import com.onedev.dicoding.submission_three.widget.FavoriteStackWidget
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
@@ -186,6 +188,7 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                 lifecycleScope.launch(Dispatchers.IO) {
                     activity?.contentResolver?.insert(CONTENT_URI, values)
                 }
+                refreshWidget(requireContext())
 
                 view?.let {
                     Support.showSnackBar(it, getString(R.string.success_add_favorite))
@@ -201,6 +204,7 @@ class DetailHomeFragment : Fragment(), View.OnClickListener {
                         activity?.contentResolver?.delete(urlWithId, null, null)
                     }
                 }
+                refreshWidget(requireContext())
 
                 view?.let {
                     Support.showSnackBar(it, getString(R.string.success_delete_favorite))

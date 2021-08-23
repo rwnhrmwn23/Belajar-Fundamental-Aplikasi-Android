@@ -37,4 +37,7 @@
     <string name="no">No</string>
     <string name="delete_all_favorite">Delete All Favorite</string>
     <string name="confirmation_delete_all_favorite">Are you sure you want to delete all favorite?</string>
+    <string name="favorite_widget">Favorite Widget</string>
+    <string name="favorite_empty">Favorite Not Found</string>
+    <string name="app_widget_description">Widget for show list favorite user github</string>
 </resources>

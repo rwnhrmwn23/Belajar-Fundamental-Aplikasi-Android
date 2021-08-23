@@ -36,4 +36,6 @@
     <string name="no">Tidak</string>
     <string name="delete_all_favorite">Hapus Semua Favorit</string>
     <string name="confirmation_delete_all_favorite">Apa kamu yakin menghapus semua daftar favorit?</string>
+    <string name="favorite_widget">Widget Favorit</string>
+    <string name="favorite_empty">Favorit Tidak Ditemukan</string>
 </resources>

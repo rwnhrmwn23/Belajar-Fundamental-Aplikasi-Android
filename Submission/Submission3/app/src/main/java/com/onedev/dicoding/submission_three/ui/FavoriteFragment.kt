@@ -18,6 +18,8 @@ import com.onedev.dicoding.submission_three.util.IFavorite
 import com.onedev.dicoding.submission_three.util.MappingHelper
 import com.onedev.dicoding.submission_three.util.Support
 import com.onedev.dicoding.submission_three.util.Support.CONTENT_URI
+import com.onedev.dicoding.submission_three.util.Support.refreshWidget
+import com.onedev.dicoding.submission_three.widget.FavoriteStackWidget
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
@@ -100,6 +102,7 @@ class FavoriteFragment : Fragment(), IFavorite {
                 lifecycleScope.launch(Dispatchers.IO) {
                     activity?.contentResolver?.delete(CONTENT_URI, null, null)
                 }
+                refreshWidget(requireContext())
                 Support.showSnackBar(requireView(), getString(R.string.success_delete_all_favorite))
             }
             .setNegativeButton(getString(R.string.no)) { _, _ -> }
@@ -125,6 +128,7 @@ class FavoriteFragment : Fragment(), IFavorite {
             lifecycleScope.launch(Dispatchers.IO) {
                 activity?.contentResolver?.delete(urlWithId, null, null)
             }
+            refreshWidget(requireContext())
             Support.showSnackBar(requireView(), getString(R.string.success_delete_favorite))
         }
     }

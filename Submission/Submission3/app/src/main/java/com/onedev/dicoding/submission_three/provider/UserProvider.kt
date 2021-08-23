@@ -1,5 +1,6 @@
 package com.onedev.dicoding.submission_three.provider
 
+import android.annotation.SuppressLint
 import android.content.ContentProvider
 import android.content.ContentValues
 import android.content.Context
@@ -12,8 +13,11 @@ import com.onedev.dicoding.submission_three.util.Support.AUTHORITY
 import com.onedev.dicoding.submission_three.util.Support.CONTENT_URI
 import com.onedev.dicoding.submission_three.util.Support.TABLE_NAME
 import com.onedev.dicoding.submission_three.util.Support.toItemUser
+import com.onedev.dicoding.submission_three.widget.FavoriteStackWidget
 
 class UserProvider : ContentProvider() {
+
+//    val application: Application
 
     companion object {
         private const val FAVORITE = 1
@@ -50,6 +54,7 @@ class UserProvider : ContentProvider() {
         }
 
         context?.contentResolver?.notifyChange(CONTENT_URI, null)
+
         return Uri.parse("$CONTENT_URI/$added")
     }
 
@@ -68,6 +73,7 @@ class UserProvider : ContentProvider() {
         }
 
         context?.contentResolver?.notifyChange(CONTENT_URI, null)
+
         return deleted
     }
 
