@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d4d8c953-4960-4639-b6de-a0c34405bbfb" name="Default Changelist" comment="add name in home">
+      <changelist_data name="yogawicak" email="rwnhermawan@gmail.com" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/androidTest/java/com/onedev/dicoding/mywidgets/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/java/com/onedev/dicoding/mywidgets/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/app/src/test/java/com/onedev/dicoding/mywidgets/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../5.Extended_Application/MyWidgets/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/androidTest/java/com/onedev/dicoding/submission_one/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/adapter/UserAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/model/Users.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/repository/MainRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/ui/DetailHomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/ui/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/ui/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/ui/SplashFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/util/Support.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/viewmodel/MainViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/ic_baseline_arrow_back.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/ic_baseline_card_travel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/ic_baseline_location_on.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/ic_baseline_person.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/ic_baseline_share.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/drawable/user9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/layout/fragment_detail_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/layout/fragment_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/layout/list_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/layout/list_user_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/navigation/main_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/app/src/test/java/com/onedev/dicoding/submission_one/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/androidTest/java/com/onedev/dicoding/submission_two/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/MyApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/adapter/FollowersFollowingAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/adapter/TabFollowerAndFollowingAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/adapter/UserAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/di/RetroComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/di/RetroModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/di/RetroService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/FollowersAndFollowing.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/ItemDetailUser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/ItemFollowersAndFollowingItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/ItemSearchUser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/SearchUserResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/repository/MainRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/ChangeLanguageFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/DetailHomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/FollowersFollowingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/FollowersFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/FollowingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/SettingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/SplashFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/util/Constant.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/util/LocaleHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/util/PreferenceManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/util/Support.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/viewmodel/MainViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_arrow_back.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_book.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_card_travel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_language.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_location_on.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_not_interested.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_person.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_search_off.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_baseline_share.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/indonesia_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/drawable/united_states_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/fragment_change_language.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/fragment_detail_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/fragment_followers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/fragment_followers_following.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/fragment_following.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/fragment_setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/fragment_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/layout_user_details_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/layout_user_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/layout/list_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/menu/detail_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/menu/main_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/navigation/main_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/values-in-rID/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/app/src/test/java/com/onedev/dicoding/submission_two/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission2/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/androidTest/java/com/onedev/dicoding/submission_three/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/ic_launcher-playstore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/MyApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/adapter/FavoriteAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/adapter/FollowersFollowingAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/adapter/TabFollowerAndFollowingAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/adapter/UserAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/dao/FavoriteDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/database/FavoriteDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/di/RetroComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/di/RetroModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/di/RetroService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/model/FollowersAndFollowing.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/model/ItemDetailUser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/model/ItemFollowersAndFollowingItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/model/ItemUser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/model/SearchUserResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/provider/UserProvider.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/repository/MainRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/ChangeLanguageFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/DetailHomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/FavoriteFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/FollowersFollowingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/FollowersFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/FollowingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/SettingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/ui/SplashFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/util/Constant.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/util/IFavorite.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/util/LocaleHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/util/MappingHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/util/PreferenceManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/util/Support.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/java/com/onedev/dicoding/submission_three/viewmodel/MainViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_arrow_back.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_book.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_card_travel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_delete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_favorite_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_language.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_location_on.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_not_interested.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_person.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_search_off.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_baseline_share.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/indonesia_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/drawable/united_states_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/fragment_change_language.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/fragment_detail_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/fragment_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/fragment_followers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/fragment_followers_following.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/fragment_following.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/fragment_setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/fragment_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/layout_user_details_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/layout_user_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/list_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/layout/list_user_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/menu/delete_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/menu/detail_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/menu/main_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/navigation/main_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/values-in-rID/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/app/src/test/java/com/onedev/dicoding/submission_three/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/androidTest/java/com/onedev/consumerapp/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/MyApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/adapter/FavoriteAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/adapter/FollowersFollowingAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/adapter/TabFollowerAndFollowingAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/adapter/UserAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/di/RetroComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/di/RetroModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/di/RetroService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/model/FollowersAndFollowing.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/model/ItemDetailUser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/model/ItemFollowersAndFollowingItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/model/ItemUser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/model/SearchUserResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/repository/MainRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/ChangeLanguageFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/DetailHomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/FavoriteFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/FollowersFollowingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/FollowersFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/FollowingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/SettingFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/ui/SplashFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/util/Constant.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/util/IFavorite.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/util/LocaleHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/util/MappingHelper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/util/PreferenceManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/util/Support.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/java/com/onedev/consumerapp/viewmodel/MainViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_arrow_back.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_book.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_card_travel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_delete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_favorite_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_language.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_location_on.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_not_interested.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_person.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_search_off.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_baseline_share.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/indonesia_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/drawable/united_states_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_arrow_back.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_book.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_card_travel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_delete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_favorite_border.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_language.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_location_on.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_not_interested.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_person.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_search_off.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_baseline_share.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/indonesia_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/fragment_change_language.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/fragment_detail_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/fragment_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/fragment_followers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/fragment_followers_following.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/fragment_following.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/fragment_setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/fragment_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/layout_user_details_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/layout_user_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/list_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/layout/list_user_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/menu/delete_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/menu/detail_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/menu/main_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/navigation/main_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/drawable/united_states_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/fragment_change_language.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/fragment_detail_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/fragment_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/fragment_followers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/fragment_followers_following.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/fragment_following.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/fragment_setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/fragment_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/layout_user_details_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/layout_user_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/list_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/layout/list_user_favorite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/menu/delete_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/menu/detail_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/menu/main_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/navigation/main_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/values-in-rID/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/consumerapp/src/test/java/com/onedev/consumerapp/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/Submission3/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/SubmissionOne.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Submission/SubmissionTwo.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/androidTest/java/com/onedev/dicoding/submission_one/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/adapter/UserAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/model/Users.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/repository/MainRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/ui/DetailHomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/ui/HomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/ui/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/ui/SplashFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/util/Support.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/java/com/onedev/dicoding/submission_one/viewmodel/MainViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/ic_baseline_arrow_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/ic_baseline_card_travel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/ic_baseline_location_on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/ic_baseline_person.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/ic_baseline_share.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/drawable/user9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/layout/fragment_detail_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/layout/fragment_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/layout/list_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/layout/list_user_placeholder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/navigation/main_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/app/src/test/java/com/onedev/dicoding/submission_one/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/Submission1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.Fundamental/SubmissionOne.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/androidTest/java/com/onedev/dicoding/submission_two/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/MyApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/adapter/FollowersFollowingAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/adapter/TabFollowerAndFollowingAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/adapter/UserAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/di/RetroComponent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/di/RetroModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/di/RetroService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/FollowersAndFollowing.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/ItemDetailUser.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/ItemFollowersAndFollowingItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/ItemSearchUser.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/model/SearchUserResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/repository/MainRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/ChangeLanguageFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/DetailHomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/FollowersFollowingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/FollowersFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/FollowingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/HomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/SettingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/ui/SplashFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/util/Constant.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/util/LocaleHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/util/PreferenceManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/util/Support.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/java/com/onedev/dicoding/submission_two/viewmodel/MainViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_arrow_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_book.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_card_travel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_language.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_location_on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_not_interested.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_person.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_search_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_baseline_share.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/indonesia_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/drawable/united_states_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/fragment_change_language.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/fragment_detail_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/fragment_followers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/fragment_followers_following.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/fragment_following.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/fragment_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/fragment_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/layout_user_details_placeholder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/layout_user_placeholder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/layout/list_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/menu/detail_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/menu/main_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/navigation/main_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/values-in-rID/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/app/src/test/java/com/onedev/dicoding/submission_two/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/Submission2/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3.Background_Process/SubmissionTwo.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/onedev/dicoding/submission_three/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-playstore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/MyApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/adapter/FavoriteAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/adapter/FollowersFollowingAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/adapter/TabFollowerAndFollowingAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/adapter/UserAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/dao/FavoriteDao.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/database/FavoriteDatabase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/di/RetroComponent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/di/RetroModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/di/RetroService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/model/FollowersAndFollowing.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/model/ItemDetailUser.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/model/ItemFollowersAndFollowingItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/model/ItemUser.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/model/SearchUserResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/provider/UserProvider.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/repository/MainRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/ChangeLanguageFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/DetailHomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/FavoriteFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/FollowersFollowingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/FollowersFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/FollowingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/HomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/SettingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/SplashFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/util/Constant.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/util/IFavorite.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/util/LocaleHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/util/MappingHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/util/PreferenceManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/util/Support.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/viewmodel/MainViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_arrow_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_book.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_card_travel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_delete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_favorite_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_language.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_location_on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_not_interested.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_person.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_search_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_share.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/indonesia_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/united_states_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_change_language.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_detail_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_followers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_followers_following.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_following.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_user_details_placeholder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_user_placeholder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_user_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/delete_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/detail_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/main_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-in-rID/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/onedev/dicoding/submission_three/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/androidTest/java/com/onedev/consumerapp/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/MyApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/adapter/FavoriteAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/adapter/FollowersFollowingAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/adapter/TabFollowerAndFollowingAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/adapter/UserAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/di/RetroComponent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/di/RetroModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/di/RetroService.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/model/FollowersAndFollowing.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/model/ItemDetailUser.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/model/ItemFollowersAndFollowingItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/model/ItemUser.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/model/SearchUserResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/repository/MainRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/ChangeLanguageFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/DetailHomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/FavoriteFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/FollowersFollowingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/FollowersFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/FollowingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/HomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/SettingFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/ui/SplashFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/util/Constant.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/util/IFavorite.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/util/LocaleHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/util/MappingHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/util/PreferenceManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/util/Support.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/java/com/onedev/consumerapp/viewmodel/MainViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_arrow_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_book.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_card_travel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_delete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_favorite_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_language.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_location_on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_not_interested.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_person.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_search_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_baseline_share.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/indonesia_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/drawable/united_states_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/github.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_arrow_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_book.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_card_travel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_delete.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_favorite_border.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_language.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_location_on.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_not_interested.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_person.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_search_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_baseline_share.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/indonesia_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/fragment_change_language.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/fragment_detail_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/fragment_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/fragment_followers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/fragment_followers_following.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/fragment_following.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/fragment_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/fragment_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/layout_user_details_placeholder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/layout_user_placeholder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/list_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/layout/list_user_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/menu/delete_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/menu/detail_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/menu/main_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/navigation/main_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/drawable/united_states_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/fragment_change_language.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/fragment_detail_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/fragment_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/fragment_followers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/fragment_followers_following.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/fragment_following.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/fragment_setting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/fragment_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/layout_user_details_placeholder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/layout_user_placeholder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/list_user.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/layout/list_user_favorite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/menu/delete_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/menu/detail_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/menu/main_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/navigation/main_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/values-in-rID/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumerapp/src/test/java/com/onedev/consumerapp/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\rwnhe\.android\avd\Pixel_API_30.avd]" />
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Submission2\exportToHTML" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SubmissionTwo" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SubmissionTwo" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SubmissionTwo" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="navigationResourceFile" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="yogawicak &lt;rwnhermawan@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1uvwM4vBnGw45WIyx8DpB6F3gyk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/consumerapp/src/main/res" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IRWAN\Dicoding\BFAA\Submission3\consumerapp\src\main\res" />
+      <recent name="D:\IRWAN\Dicoding\BFAA\Submission3\consumerapp\src\main\res\drawable" />
+      <recent name="D:\IRWAN\Dicoding\BFAA\Submission3\app\src\main\res\menu" />
+      <recent name="D:\IRWAN\Dicoding\BFAA\Submission3\app\src\main\res\layout" />
+      <recent name="D:\IRWAN\Dicoding\BFAA\3.Background_Process\Submission2\app\src\main\res\drawable" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.onedev.dicoding.submission_three.ui" />
+      <recent name="com.onedev.dicoding.submission_two.ui" />
+      <recent name="com.onedev.dicoding.submission1.activity" />
+    </key>
+    <key name="android.template.-1312087241">
+      <recent name="com.onedev.dicoding.submission_one.activity" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.onedev.dicoding.submission_three.util" />
+      <recent name="com.onedev.dicoding.submission_three.adapter" />
+      <recent name="com.onedev.dicoding.submission_two.util" />
+      <recent name="com.onedev.dicoding.submission_two.adapter" />
+      <recent name="com.onedev.dicoding.submission_one.adapter" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.consumerapp">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="SubmissionThree.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="consumerapp" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="SubmissionThree.consumerapp" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d4d8c953-4960-4639-b6de-a0c34405bbfb" name="Default Changelist" comment="" />
+      <created>1625559320296</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625559320296</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add name in home">
+      <created>1627354298321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627354298321</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add name in home" />
+    <option name="LAST_COMMIT_MESSAGE" value="add name in home" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/DetailHomeFragment.kt</url>
+          <line>200</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/onedev/dicoding/submission_three/ui/FavoriteFragment.kt</url>
+          <line>100</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
