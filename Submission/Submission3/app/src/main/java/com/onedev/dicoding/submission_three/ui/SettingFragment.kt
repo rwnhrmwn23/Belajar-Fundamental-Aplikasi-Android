@@ -61,8 +61,8 @@ class SettingFragment : Fragment(), View.OnClickListener {
                 message = getString(R.string.message_reminder),
                 requestCode = ALARM_ID_REPEATING,
                 time = Calendar.getInstance().apply {
-                    set(Calendar.HOUR_OF_DAY, 19)
-                    set(Calendar.MINUTE, 11)
+                    set(Calendar.HOUR_OF_DAY, 9)
+                    set(Calendar.MINUTE, 0)
                     set(Calendar.SECOND, 0)
                 }
             )
